@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+html {
+  background-color: #dc6d51;
+  overflow: hidden;
+}
+
+.main-illustration {
+  height: 80%;
+  pointer-events: none;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: illustration 400ms ease-in-out 650ms both;
+}
+
+.App-header {
+  /*   background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; 
+  background-color: white;
+  border-radius: 365px;
+  width: 85vw;
+  height: 105vh;
+  left: 87%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);*/
+  //box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: rgb(255 255 255);
+  display: flex;
+  width: 60vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* top: -100%; */
+  /* border-top-left-radius: 100%; */
+  border-bottom-left-radius: 62%;
+  animation: background-two 650ms ease-in-out
+    /* cubic-bezier(0.22, 0.38, 0, 1.71) */;
+}
+
+.text-area {
+  display: flex;
+  width: 40vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  float: left;
+  animation: text 1s ease-out 1050ms both;
+}
+
+.text-area-heading {
+  font-family: "Sora", sans-serif;
+  text-align: left;
+  font-weight: 900;
+  color: white;
+}
+
+.anchor {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: white;
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 6px;
+    background: #ffffff;
+    transition: width 0.3s;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes text {
+  0% {
+    display: block;
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes illustration {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes background-two {
+  0% {
+    transform: translate(100%, -100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
