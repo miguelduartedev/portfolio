@@ -6,7 +6,7 @@ function App() {
       <section className="App-header">
         <img
           src="main_illustration.svg"
-          className="main-illustration"
+          className="https://raw.githubusercontent.com/luisconceicaodev/portfolio/main/public/main_illustration.svg"
           alt="An Illustration of a man in a home office greeting you in"
         />
       </section>
