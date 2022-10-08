@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.App {
+  text-align: center;
+}
+
+html {
+  background-color: #dc6d51;
+  overflow: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@include media-breakpoint-down(lg) {
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+}
