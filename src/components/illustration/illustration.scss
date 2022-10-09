@@ -93,15 +93,66 @@
     transition: opacity 5s ease-in-out;
 
     .one {
-      background-image: url("http://localhost:5000/portfolio/mee.jpg");
+      background-image: url("http://localhost:5000/portfolio/me.webp");
     }
 
     .two {
-      background-image: url("http://localhost:5000/portfolio/ok.jpg");
+      background-image: url("http://localhost:5000/portfolio/Hallstatt.jpg");
     }
 
     .three {
-      background-image: url("http://localhost:5000/portfolio/hallstat.jpg");
+      background-image: url("http://localhost:5000/portfolio/Porto.webp");
+    }
+
+    .four {
+      background-image: url("http://localhost:5000/portfolio/Concarneau.webp");
+    }
+
+    .five {
+      background-image: url("http://localhost:5000/portfolio/Stockholm.webp");
+    }
+
+    .six {
+      background-image: url("http://localhost:5000/portfolio/Stockholm2.webp");
+    }
+
+    .seven {
+      background-image: url("http://localhost:5000/portfolio/Stockholm3.webp");
+    }
+
+    .eight {
+      background-image: url("http://localhost:5000/portfolio/Stockholm4.webp");
+    }
+
+    .nine {
+      background-image: url("http://localhost:5000/portfolio/Rosendal.webp");
+    }
+
+    .ten {
+      background-image: url("http://localhost:5000/portfolio/Rosendal2.webp");
+    }
+
+    .copenhagen {
+      background-image: url("http://localhost:5000/portfolio/Copenhagen.webp");
+    }
+
+    .luxembourg {
+      background-image: url("http://localhost:5000/portfolio/Luxembourg.webp");
+    }
+    .seville {
+      background-image: url("http://localhost:5000/portfolio/seville2.webp");
+    }
+    .ronda {
+      background-image: url("http://localhost:5000/portfolio/ronda.webp");
+    }
+    .cordoba {
+      background-image: url("http://localhost:5000/portfolio/cordoba.webp");
+    }
+    .bilbao {
+      background-image: url("http://localhost:5000/portfolio/bilbao.webp");
+    }
+    .ireland {
+      background-image: url("http://localhost:5000/portfolio/ireland.webp");
     }
 
     .slick-slider {
@@ -149,6 +200,38 @@
 
     .slick-list {
       height: 100vh !important;
+    }
+
+    .slick-arrow {
+      z-index: 300;
+      &.slick-prev {
+        left: 32px;
+        width: 40px;
+        height: 40px;
+        &::before {
+          font-size: 40px;
+        }
+        &:focus {
+          opacity: 0.75;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.slick-next {
+        right: 32px;
+        width: 40px;
+        height: 40px;
+        &::before {
+          font-size: 40px;
+        }
+        &:focus {
+          opacity: 0.75;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
 }
