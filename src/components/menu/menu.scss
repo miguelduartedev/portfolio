@@ -15,15 +15,40 @@
   animation: text 1s ease-out 1050ms both;
 
   &.aboutme {
-    width: 50vw;
-  }
-}
+    animation: swapText 1s ease-out 2050ms forwards;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
-.text-area-heading {
-  font-family: "Sora", sans-serif;
-  text-align: left;
-  font-weight: 900;
-  color: white;
+    .-transitionOut {
+      animation: disappearText 1s ease-out forwards;
+    }
+    .-transitionIn {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      animation: appearText 2s ease-out 1800ms forwards;
+    }
+  }
+
+  &-anchor {
+    color: white;
+    transition: filter 200ms ease-out;
+    &:hover {
+      filter: drop-shadow(0 0 8px rgba(249, 197, 67));
+    }
+  }
+
+  &-heading {
+    font-family: "Sora", sans-serif;
+    text-align: left;
+    font-weight: 900;
+    color: white;
+  }
 }
 
 .anchor {
@@ -47,6 +72,14 @@
   }
 }
 
+.text-aboutme {
+  text-align: left;
+  max-width: 50vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  color: white;
+}
+
 @keyframes text {
   0% {
     display: block;
@@ -65,5 +98,51 @@
     height: 50vh;
     top: unset;
     bottom: 0;
+  }
+}
+
+@keyframes swapText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 50vw;
+    overflow: scroll;
+    justify-content: flex-start;
+  }
+}
+
+@keyframes disappearText {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes appearText {
+  0% {
+    opacity: 0;
+  }
+  // Opacity is set to 0 still so that the text won't visibly move around while the width and height are changing
+  50% {
+    opacity: 0;
+    width: unset;
+    height: unset;
+    overflow: unset;
+  }
+  // I'm repeating some rules so that they stick (forwards) in the end
+  100% {
+    opacity: 1;
+    width: unset;
+    height: unset;
+    overflow: unset;
   }
 }
