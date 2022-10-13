@@ -1,7 +1,16 @@
 @import "~bootstrap/scss/bootstrap-grid.scss";
 
 .media {
-  background-color: #ffffff;
+  //background-image: url(http://localhost:5000/portfolio/wait.png);
+  //background-position: bottom;
+  //background-color: #e9a291;
+  //background: linear-gradient(0deg, #ffc487 50%, #d3e5e7 50%);
+  //background: linear-gradient(0deg, #ffc487 36%, #ffd9be 36%);
+  //background: linear-gradient(0deg, #ffad58 36%, #ffd9be 36%);
+  //background: linear-gradient(0deg, #ffb567 36%, #ffd9be 36%);
+  //background: linear-gradient(0deg, #fcb994 36%, #ffd9be 36%);
+  background: linear-gradient(0deg, #fcb994 36%, #ffe5d2 36%);
+
   display: flex;
   width: 60vw;
   height: 100vh;
@@ -27,6 +36,7 @@
     transform: translate(-50%, -50%);
     animation: illustration 400ms ease-in-out 650ms both;
     transition: height 750ms ease-out;
+    filter: drop-shadow(8px 0px 5px rgb(0 0 0 / 0.05));
 
     &.-hide {
       height: 0;
@@ -71,13 +81,15 @@
     }
     50% {
       transform: translate(100%, -100%);
-      background-color: transparent;
+    }
+    80% {
+      background: transparent;
     }
     100% {
       transform: translate(0%, 0%);
       border-bottom-left-radius: 0;
       /*  border-top-right-radius: 62%; */
-      background-color: transparent;
+      background: transparent;
       width: 50vw;
     }
   }
