@@ -25,6 +25,26 @@
     animation: swap 1.5s ease-in-out forwards;
   }
 
+  &.experience {
+    animation: hideIllustration 1.5s ease-in-out forwards;
+  }
+
+  @keyframes hideIllustration {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    50% {
+      transform: translate(100%, -100%);
+    }
+    80% {
+      background: transparent;
+    }
+    100% {
+      transform: translate(0%, 0%);
+      z-index: -1;
+    }
+  }
+
   .main-illustration {
     height: 80%;
     pointer-events: none;
@@ -53,6 +73,45 @@
       height: 100%;
       left: 50%;
     }
+
+    @keyframes swap {
+      0% {
+        transform: translate(0%, 0%);
+      }
+      50% {
+        transform: translate(100%, -100%);
+      }
+      80% {
+        background: transparent;
+      }
+      100% {
+        transform: translate(0%, 0%);
+        border-bottom-left-radius: 0;
+        /*  border-top-right-radius: 62%; */
+        background: transparent;
+        width: 100vw;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    @keyframes swap {
+      0% {
+        transform: translate(0%, 0%);
+      }
+      50% {
+        transform: translate(100%, -100%);
+      }
+      80% {
+        background: transparent;
+      }
+      100% {
+        transform: translate(0%, 0%);
+        border-bottom-left-radius: 0;
+        /*  border-top-right-radius: 62%; */
+        background: transparent;
+        width: 50vw;
+      }
+    }
   }
 
   @keyframes illustration {
@@ -72,25 +131,6 @@
     }
     100% {
       transform: translate(0%, 0%);
-    }
-  }
-
-  @keyframes swap {
-    0% {
-      transform: translate(0%, 0%);
-    }
-    50% {
-      transform: translate(100%, -100%);
-    }
-    80% {
-      background: transparent;
-    }
-    100% {
-      transform: translate(0%, 0%);
-      border-bottom-left-radius: 0;
-      /*  border-top-right-radius: 62%; */
-      background: transparent;
-      width: 50vw;
     }
   }
 
@@ -188,12 +228,21 @@
       height: 100vh;
       width: 50vw;
       display: block;
+      @include media-breakpoint-down(lg) {
+        width: 100vw;
+        height: 40vh;
+      }
     }
 
     &.-show {
       opacity: 1;
       transition: opacity 750ms ease-in-out;
       transition-delay: 1.5s;
+    }
+    &.-hide {
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+      transition-delay: 0s;
     }
     /*     .slick-slide {
       opacity: 0;
@@ -211,7 +260,10 @@
     } */
 
     .slick-list {
-      height: 100vh !important;
+      height: 100vh;
+      @include media-breakpoint-down(lg) {
+        height: 40vh;
+      }
     }
 
     .slick-arrow {

@@ -37,7 +37,7 @@ const Illustration = ({ area, setArea }) => {
         className={clsx("main-illustration", area !== "main" && "-hide")}
         alt="An Illustration of a man in a home office greeting you in"
       />
-      <div className={clsx("aboutme", area === "aboutme" && "-show")}>
+      <div className={clsx("aboutme", area === "aboutme" ? "-show" : "-hide")}>
         <Slider {...settings} ref={sliderRef}>
           <div>
             <div className="images one"></div>

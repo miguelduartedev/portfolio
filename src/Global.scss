@@ -2,9 +2,14 @@
 
 .App {
   text-align: center;
+  &.experience {
+    overflow-y: scroll;
+    height: 100vh;
+  }
 }
 
-html {
+html,
+.App {
   background-color: #dc6d51;
   overflow: hidden;
 }
@@ -25,4 +30,9 @@ html {
   width: 0;
   height: 0;
   overflow: hidden;
+}
+
+.-projects {
+  min-width: unset;
+  min-height: 72px;
 }
