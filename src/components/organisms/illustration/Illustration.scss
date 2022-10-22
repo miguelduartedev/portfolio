@@ -1,16 +1,7 @@
 @import "~bootstrap/scss/bootstrap-grid.scss";
 
 .media {
-  //background-image: url(http://localhost:5000/portfolio/wait.png);
-  //background-position: bottom;
-  //background-color: #e9a291;
-  //background: linear-gradient(0deg, #ffc487 50%, #d3e5e7 50%);
-  //background: linear-gradient(0deg, #ffc487 36%, #ffd9be 36%);
-  //background: linear-gradient(0deg, #ffad58 36%, #ffd9be 36%);
-  //background: linear-gradient(0deg, #ffb567 36%, #ffd9be 36%);
-  //background: linear-gradient(0deg, #fcb994 36%, #ffd9be 36%);
   background: linear-gradient(0deg, #fcb994 36%, #ffe5d2 36%);
-
   display: flex;
   width: 60vw;
   height: 100vh;
@@ -63,7 +54,6 @@
     }
   }
 
-  // Don't sue me but I developed the desktop version first
   @include media-breakpoint-down(lg) {
     width: 100vw;
     height: 50vh;
@@ -87,7 +77,6 @@
       100% {
         transform: translate(0%, 0%);
         border-bottom-left-radius: 0;
-        /*  border-top-right-radius: 62%; */
         background: transparent;
         width: 100vw;
       }
@@ -107,7 +96,6 @@
       100% {
         transform: translate(0%, 0%);
         border-bottom-left-radius: 0;
-        /*  border-top-right-radius: 62%; */
         background: transparent;
         width: 50vw;
       }
@@ -244,20 +232,6 @@
       transition: opacity 200ms ease-in-out;
       transition-delay: 0s;
     }
-    /*     .slick-slide {
-      opacity: 0;
-      transition: opacity 5s ease-in-out;
-    }
-    &.-show {
-      height: 100vh;
-      .slick-slide img {
-        height: 100vh;
-        width: 100%;
-        opacity: 1;
-        transition: opacity 750ms ease-in-out;
-        transition-delay: 1.5s;
-      }
-    } */
 
     .slick-list {
       height: 100vh;
@@ -299,32 +273,3 @@
     }
   }
 }
-
-/* .slick-slide div {
-  outline: none !important;
-}
-
-.slick-slide {
-  outline: 8px ridge rgba(170, 50, 220, 0.6) !important;
-  border-radius: 2rem;
-}
-
-.slick-slide:focus {
-  outline: none !important;
-}
-
-.slick-slide,
-.slick-slide:focus * {
-  outline: none !important;
-}
-
-.slick-active {
-  outline: none !important;
-}
-
-.slick-slide {
-  outline: none !important;
-}
-.slick-slide:active {
-  outline: none !important;
-} */
