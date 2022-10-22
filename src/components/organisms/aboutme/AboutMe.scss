@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.text-aboutme {
+  text-align: left;
+  max-width: 50vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  color: white;
+
+  @include media-breakpoint-down(lg) {
+    max-width: 80vw;
+  }
+}

@@ -1,0 +1,311 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.media {
+  background: linear-gradient(0deg, #fcb994 36%, #ffe5d2 36%);
+  display: flex;
+  width: 60vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 62%;
+  animation: background-two 650ms ease-in-out;
+  overflow: hidden;
+
+  &.-change {
+    animation: swap 1.5s ease-in-out forwards;
+  }
+
+  &.experience {
+    animation: hideIllustration 1.5s ease-in-out forwards;
+  }
+
+  @keyframes hideIllustration {
+    0% {
+      transform: translate(0%, 0%);
+    }
+
+    50% {
+      transform: translate(100%, -100%);
+    }
+
+    80% {
+      background: transparent;
+    }
+
+    100% {
+      transform: translate(0%, 0%);
+      z-index: -1;
+    }
+  }
+
+  .main-illustration {
+    height: 80%;
+    pointer-events: none;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: illustration 400ms ease-in-out 650ms both;
+    transition: height 750ms ease-out;
+    filter: drop-shadow(8px 0px 5px rgb(0 0 0 / 0.05));
+
+    &.-hide {
+      height: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 100vw;
+    height: 50vh;
+
+    .main-illustration {
+      top: 51%;
+      height: 100%;
+      left: 50%;
+    }
+
+    @keyframes swap {
+      0% {
+        transform: translate(0%, 0%);
+      }
+
+      50% {
+        transform: translate(100%, -100%);
+      }
+
+      80% {
+        background: transparent;
+      }
+
+      100% {
+        transform: translate(0%, 0%);
+        border-bottom-left-radius: 0;
+        background: transparent;
+        width: 100vw;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    @keyframes swap {
+      0% {
+        transform: translate(0%, 0%);
+      }
+
+      50% {
+        transform: translate(100%, -100%);
+      }
+
+      80% {
+        background: transparent;
+      }
+
+      100% {
+        transform: translate(0%, 0%);
+        border-bottom-left-radius: 0;
+        background: transparent;
+        width: 50vw;
+      }
+    }
+  }
+
+  @keyframes illustration {
+    0% {
+      opacity: 0;
+      scale: 0.9;
+    }
+
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes background-two {
+    0% {
+      transform: translate(100%, -100%);
+    }
+
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+
+  .aboutme {
+    transition: height 2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+
+    .me {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/me.webp");
+    }
+
+    .hallstatt {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Hallstatt.jpg");
+    }
+
+    .porto {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Porto.webp");
+    }
+
+    .concarneau {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Concarneau.webp");
+    }
+
+    .stockholm {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Stockholm.webp");
+    }
+
+    .stockholm-2 {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Stockholm2.webp");
+    }
+
+    .rosendal {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Rosendal.webp");
+    }
+
+    .rosendal-2 {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Rosendal2.webp");
+    }
+
+    .copenhagen {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Copenhagen.webp");
+    }
+
+    .luxembourg {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Luxembourg.webp");
+    }
+
+    .seville {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Seville.webp");
+    }
+
+    .ronda {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Ronda.webp");
+    }
+
+    .cordoba {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Cordoba.webp");
+    }
+
+    .bilbao {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Bilbao.webp");
+    }
+
+    .ireland {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Ireland.webp");
+    }
+
+    .sintra {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Sintra.webp");
+    }
+    .brussels {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Brussels.webp");
+    }
+    .boston {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Boston.webp");
+    }
+    .rome {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Rome.webp");
+    }
+    .vatican {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Vatican.webp");
+    }
+
+    .slick-slider {
+      div {
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    .slider .slide:last-child {
+      border-right: none;
+    }
+
+    .images {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      box-sizing: border-box;
+      position: relative;
+      height: 100vh;
+      width: 50vw;
+      display: block;
+
+      @include media-breakpoint-down(lg) {
+        width: 100vw;
+        height: 40vh;
+      }
+    }
+
+    &.-show {
+      opacity: 1;
+      transition: opacity 750ms ease-in-out;
+      transition-delay: 1.5s;
+    }
+
+    &.-hide {
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+      transition-delay: 0s;
+    }
+
+    .slick-list {
+      height: 100vh;
+
+      @include media-breakpoint-down(lg) {
+        height: 40vh;
+      }
+    }
+
+    .slick-arrow {
+      z-index: 300;
+
+      &.slick-prev {
+        left: 32px;
+        width: 40px;
+        height: 40px;
+
+        &::before {
+          font-size: 40px;
+        }
+
+        &:focus {
+          opacity: 0.75;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &.slick-next {
+        right: 32px;
+        width: 40px;
+        height: 40px;
+
+        &::before {
+          font-size: 40px;
+        }
+
+        &:focus {
+          opacity: 0.75;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.text-area {
+  display: flex;
+  width: 40vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  float: left;
+  animation: text 1s ease-out 1050ms both;
+
+  &.main {
+    .aboutme {
+      display: none;
+    }
+  }
+
+  &.aboutme {
+    animation: swapText 1s ease-out 1050ms forwards;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &.experience {
+    animation: swapToExperience 1s ease-out 2050ms forwards;
+  }
+
+  .-transitionOut {
+    animation: disappearText 1s ease-out forwards;
+  }
+  .-transitionIn {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    animation: appearText 2s ease-out 1s forwards;
+  }
+
+  &-anchor {
+    color: white;
+    transition: filter 200ms ease-out;
+    &:hover {
+      filter: drop-shadow(0 0 8px rgba(249, 197, 67));
+    }
+  }
+
+  &-heading {
+    font-family: "Sora", sans-serif;
+    font-weight: 900;
+    color: white;
+  }
+}
+
+@keyframes text {
+  0% {
+    display: block;
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes swapToExperience {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    align-items: flex-start;
+    overflow-y: auto;
+    display: none;
+    z-index: -1;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .text-area {
+    width: 100vw;
+    height: 50vh;
+    top: unset;
+    bottom: 0;
+  }
+  @keyframes swapText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100vw;
+      overflow: scroll;
+      justify-content: flex-start;
+      height: 60vh;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  @keyframes swapText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 50vw;
+      overflow: scroll;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@keyframes disappearText {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes appearText {
+  0% {
+    opacity: 0;
+  }
+  // Opacity is set to 0 still so that the text won't visibly move around while the width and height are changing
+  50% {
+    opacity: 0;
+    width: unset;
+    height: unset;
+    overflow: unset;
+  }
+  // I'm repeating some rules so that they stick (forwards) in the end
+  100% {
+    opacity: 1;
+    width: unset;
+    height: unset;
+    overflow: unset;
+  }
+}

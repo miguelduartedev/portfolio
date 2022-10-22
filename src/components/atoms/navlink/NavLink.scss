@@ -1,0 +1,20 @@
+.anchor {
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    color: white;
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 6px;
+    background: #ffffff;
+    transition: width 0.3s;
+  }
+}

@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/bootstrap-grid.scss";
+
+.App {
+  text-align: center;
+  &.experience {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+}
+
+html,
+.App {
+  background-color: #dc6d51;
+  overflow: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@include media-breakpoint-down(lg) {
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.-opacity-0 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
+}
