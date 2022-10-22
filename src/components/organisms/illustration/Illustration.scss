@@ -24,12 +24,15 @@
     0% {
       transform: translate(0%, 0%);
     }
+
     50% {
       transform: translate(100%, -100%);
     }
+
     80% {
       background: transparent;
     }
+
     100% {
       transform: translate(0%, 0%);
       z-index: -1;
@@ -68,12 +71,15 @@
       0% {
         transform: translate(0%, 0%);
       }
+
       50% {
         transform: translate(100%, -100%);
       }
+
       80% {
         background: transparent;
       }
+
       100% {
         transform: translate(0%, 0%);
         border-bottom-left-radius: 0;
@@ -82,17 +88,21 @@
       }
     }
   }
+
   @include media-breakpoint-up(lg) {
     @keyframes swap {
       0% {
         transform: translate(0%, 0%);
       }
+
       50% {
         transform: translate(100%, -100%);
       }
+
       80% {
         background: transparent;
       }
+
       100% {
         transform: translate(0%, 0%);
         border-bottom-left-radius: 0;
@@ -107,6 +117,7 @@
       opacity: 0;
       scale: 0.9;
     }
+
     100% {
       opacity: 1;
       scale: 1;
@@ -117,6 +128,7 @@
     0% {
       transform: translate(100%, -100%);
     }
+
     100% {
       transform: translate(0%, 0%);
     }
@@ -132,67 +144,86 @@
     opacity: 0;
     transition: opacity 5s ease-in-out;
 
-    .one {
-      background-image: url("http://localhost:5000/portfolio/me.webp");
+    .me {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/me.webp");
     }
 
-    .two {
-      background-image: url("http://localhost:5000/portfolio/Hallstatt.jpg");
+    .hallstatt {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Hallstatt.jpg");
     }
 
-    .three {
-      background-image: url("http://localhost:5000/portfolio/Porto.webp");
+    .porto {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Porto.webp");
     }
 
-    .four {
-      background-image: url("http://localhost:5000/portfolio/Concarneau.webp");
+    .concarneau {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Concarneau.webp");
     }
 
-    .five {
-      background-image: url("http://localhost:5000/portfolio/Stockholm.webp");
+    .stockholm {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Stockholm.webp");
     }
 
-    .six {
-      background-image: url("http://localhost:5000/portfolio/Stockholm2.webp");
+    .stockholm-2 {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Stockholm2.webp");
     }
 
-    .seven {
-      background-image: url("http://localhost:5000/portfolio/Stockholm3.webp");
+    .rosendal {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Rosendal.webp");
     }
 
-    .eight {
-      background-image: url("http://localhost:5000/portfolio/Stockholm4.webp");
-    }
-
-    .nine {
-      background-image: url("http://localhost:5000/portfolio/Rosendal.webp");
-    }
-
-    .ten {
-      background-image: url("http://localhost:5000/portfolio/Rosendal2.webp");
+    .rosendal-2 {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Rosendal2.webp");
     }
 
     .copenhagen {
-      background-image: url("http://localhost:5000/portfolio/Copenhagen.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Copenhagen.webp");
     }
 
     .luxembourg {
-      background-image: url("http://localhost:5000/portfolio/Luxembourg.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Luxembourg.webp");
     }
+
     .seville {
-      background-image: url("http://localhost:5000/portfolio/seville2.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Seville.webp");
     }
+
     .ronda {
-      background-image: url("http://localhost:5000/portfolio/ronda.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Ronda.webp");
     }
+
     .cordoba {
-      background-image: url("http://localhost:5000/portfolio/cordoba.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Cordoba.webp");
     }
+
     .bilbao {
-      background-image: url("http://localhost:5000/portfolio/bilbao.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Bilbao.webp");
     }
+
     .ireland {
-      background-image: url("http://localhost:5000/portfolio/ireland.webp");
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Ireland.webp");
+    }
+
+    .lisbon {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Lisbon.webp");
+    }
+    .sintra {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Sintra.webp");
+    }
+    .brussels {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Brussels.webp");
+    }
+    .boston {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Boston.webp");
+    }
+    .rome {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Rome.webp");
+    }
+    .vatican {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Vatican.webp");
+    }
+    .innsbruck {
+      background-image: url("https://raw.githubusercontent.com/luisconceicaodev/portfolio/master/public/photos/Innsbruck.webp");
     }
 
     .slick-slider {
@@ -216,6 +247,7 @@
       height: 100vh;
       width: 50vw;
       display: block;
+
       @include media-breakpoint-down(lg) {
         width: 100vw;
         height: 40vh;
@@ -227,6 +259,7 @@
       transition: opacity 750ms ease-in-out;
       transition-delay: 1.5s;
     }
+
     &.-hide {
       opacity: 0;
       transition: opacity 200ms ease-in-out;
@@ -235,6 +268,7 @@
 
     .slick-list {
       height: 100vh;
+
       @include media-breakpoint-down(lg) {
         height: 40vh;
       }
@@ -242,30 +276,38 @@
 
     .slick-arrow {
       z-index: 300;
+
       &.slick-prev {
         left: 32px;
         width: 40px;
         height: 40px;
+
         &::before {
           font-size: 40px;
         }
+
         &:focus {
           opacity: 0.75;
         }
+
         &:hover {
           opacity: 1;
         }
       }
+
       &.slick-next {
         right: 32px;
         width: 40px;
         height: 40px;
+
         &::before {
           font-size: 40px;
         }
+
         &:focus {
           opacity: 0.75;
         }
+
         &:hover {
           opacity: 1;
         }

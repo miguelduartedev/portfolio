@@ -29,34 +29,32 @@ const Illustration: FC<Area> = ({ area }) => {
         {area === "aboutme" && (
           <Slider {...settings}>
             <div>
-              <div className="images one"></div>
+              <div className="images me"></div>
             </div>
             <div>
-              <div className="images two"></div>
+              <div className="images hallstatt"></div>
             </div>
             <div>
-              <div className="images three"></div>
+              <div className="images porto"></div>
             </div>
             <div>
-              <div className="images four"></div>
+              <div className="images rome"></div>
             </div>
             <div>
-              <div className="images five"></div>
+              <div className="images vatican"></div>
+            </div>
+
+            <div>
+              <div className="images stockholm"></div>
             </div>
             <div>
-              <div className="images six"></div>
+              <div className="images stockholm-2"></div>
             </div>
             <div>
-              <div className="images seven"></div>
+              <div className="images rosendal"></div>
             </div>
             <div>
-              <div className="images eight"></div>
-            </div>
-            <div>
-              <div className="images nine"></div>
-            </div>
-            <div>
-              <div className="images ten"></div>
+              <div className="images rosendal-2"></div>
             </div>
             <div>
               <div className="images copenhagen"></div>
@@ -78,6 +76,24 @@ const Illustration: FC<Area> = ({ area }) => {
             </div>
             <div>
               <div className="images ireland"></div>
+            </div>
+            <div>
+              <div className="images lisbon"></div>
+            </div>
+            <div>
+              <div className="images sintra"></div>
+            </div>
+            <div>
+              <div className="images brussels"></div>
+            </div>
+            <div>
+              <div className="images boston"></div>
+            </div>
+            <div>
+              <div className="images innsbruck"></div>
+            </div>
+            <div>
+              <div className="images concarneau"></div>
             </div>
           </Slider>
         )}
