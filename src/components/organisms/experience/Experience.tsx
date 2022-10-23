@@ -187,7 +187,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
               <Skill
                 className="-projects"
                 alt="Ricardo Sousa"
-                source="./rs.svg"
+                source="./RS.svg"
               />
             </a>
           </div>
