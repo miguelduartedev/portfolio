@@ -32,15 +32,14 @@ const Experience: FC<Area> = ({ area, setArea }) => (
       </div>
     </div>
     <div className="row">
-      <div className="col-4 col-md-3 col-xl-2">
+      <div className="col-12 col-md-3 col-xl-2 pb-4 pb-md-0">
         <Skill
           className="-min-height-120"
-          overrideImgClass="w-100"
           alt="talkdesk"
           source="./talkdesk.svg"
         />
       </div>
-      <div className="col-8 col-md-9 col-xl-10 text-start">
+      <div className="col-12 col-md-9 col-xl-10 text-start">
         <p className="fw-bold mb-0">Front End Developer @ Web Team </p>
         <p className="detail mb-0">2019 - Present</p>
         <p className="mb-0">
@@ -58,7 +57,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
       </div>
     </div>
     <div className="row">
-      <div className="col-4 col-md-3 col-xl-2">
+      <div className="col-12 col-md-3 col-xl-2 pb-4 pb-md-0">
         <Skill
           className="-min-height-120"
           overrideImgClass="max-height-92"
@@ -66,7 +65,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
           source="./ulisboa.svg"
         />
       </div>
-      <div className="col-8 col-md-9 col-xl-10 text-start">
+      <div className="col-12 col-md-9 col-xl-10 text-start">
         <p className="fw-bold mb-0">Bachelor's in Information Technology </p>
         <p className="detail mb-0">2015 - 2019 // EECC Grade: B</p>
         <p className="mb-0">
@@ -121,7 +120,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
       <div className="col-12 col-lg-6 offset-lg-1 pt-5 pt-lg-0">
         <h3 className="text-area-heading text-start mt-1 mb-4">Projects</h3>
         <div className="row">
-          <div className="col-2">
+          <div className="col-12 col-md-2 pb-4 pb-md-0">
             <a
               href="https://interactive-maps.vercel.app/"
               target="_blank"
@@ -134,7 +133,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
               />
             </a>
           </div>
-          <div className="col-10">
+          <div className="col-12 col-md-10">
             <span className="text-start">
               <p className="fw-bold mb-0">Interactive Maps</p>
               <p className="detail mb-0">2022</p>
@@ -153,7 +152,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
           </div>
         </div>
         <div className="row pt-5">
-          <div className="col-2">
+          <div className="col-12 col-md-2 pb-4 pb-md-0">
             <a
               href="https://luisconceicaodev.github.io/portfolio/"
               target="_blank"
@@ -166,7 +165,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
               />
             </a>
           </div>
-          <div className="col-10">
+          <div className="col-12 col-md-10">
             <span className="text-start">
               <p className="fw-bold mb-0">My Portfolio Website</p>
               <p className="detail mb-0">2022</p>
@@ -178,7 +177,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
           </div>
         </div>
         <div className="row pt-5">
-          <div className="col-2">
+          <div className="col-12 col-md-2 pb-4 pb-md-0">
             <a
               href="https://ricardo-sousa.com/"
               target="_blank"
@@ -191,7 +190,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
               />
             </a>
           </div>
-          <div className="col-10">
+          <div className="col-12 col-md-10">
             <span className="text-start">
               <p className="fw-bold mb-0">Ricardo Sousa</p>
               <p className="detail mb-0">2020</p>

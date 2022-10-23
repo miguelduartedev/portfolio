@@ -20,7 +20,7 @@ const Skill: FC<SkillProps> = ({
 }) => (
   <div className={clsx("skill-bloc pointer", className)}>
     <img
-      className={clsx(overrideImgClass ? overrideImgClass : "skill-logo w-100")}
+      className={clsx(overrideImgClass ? overrideImgClass : "skill-logo")}
       src={source}
       alt={clsx(exists(alt) ? alt : skill)}
     />

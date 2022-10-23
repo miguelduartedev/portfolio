@@ -23,7 +23,7 @@ const Illustration: FC<Area> = ({ area }) => {
       <img
         src="main_illustration.svg"
         className={clsx("main-illustration", area !== "main" && "-hide")}
-        alt="An Illustration of a man in a home office greeting you in"
+        alt="An Illustration of a man in a home office greeting you inside"
       />
       <div className={clsx("aboutme", area === "aboutme" ? "-show" : "-hide")}>
         {area === "aboutme" && (
