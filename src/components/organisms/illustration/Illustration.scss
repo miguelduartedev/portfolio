@@ -11,6 +11,20 @@
   border-bottom-left-radius: 62%;
   animation: background-two 650ms ease-in-out;
   overflow: hidden;
+  transform: translateZ(0);
+
+  &.main,
+  &.experience {
+    @include media-breakpoint-down(lg) {
+      height: 50%;
+    }
+  }
+
+  &.aboutme {
+    @include media-breakpoint-down(lg) {
+      height: 40%;
+    }
+  }
 
   &.-change {
     animation: swap 1.5s ease-in-out forwards;
@@ -59,7 +73,6 @@
 
   @include media-breakpoint-down(lg) {
     width: 100vw;
-    height: 50vh;
 
     .main-illustration {
       top: 51%;

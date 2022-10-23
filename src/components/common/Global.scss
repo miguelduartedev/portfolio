@@ -3,14 +3,21 @@
 .App {
   text-align: center;
   &.experience {
-    overflow-y: scroll;
-    height: 100vh;
+    height: 100%;
   }
 }
 
 html,
 .App {
   background-color: #dc6d51;
+  overflow-x: hidden;
+}
+
+html:has(.App.main) {
+  overflow: hidden;
+}
+
+html:has(.App.aboutme) {
   overflow: hidden;
 }
 

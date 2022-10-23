@@ -29,7 +29,7 @@ const Main: FC<Area> = ({ area, setArea }) => (
         area,
         setArea,
         navTo: "experience",
-        label: "Professional Experience",
+        label: "Skills & Experience",
       }}
     />
     <SocialMedia {...{ area, setArea }} />
