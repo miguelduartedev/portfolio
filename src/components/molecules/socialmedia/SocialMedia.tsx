@@ -16,9 +16,9 @@ const SocialMedia: FC<Area> = ({ area }) => (
   <span
     className={clsx("social-media mt-2", area !== "main" && "-transitionOut")}
   >
-    <Icon url="https://github.com/luisconceicaodev" iconName={faGithub} />
+    <Icon url="https://github.com/miguelduartedev" iconName={faGithub} />
     <Icon
-      url="https://www.linkedin.com/in/lu%C3%ADs-miguel-d-619364108/"
+      url="https://www.linkedin.com/in/luis-miguel-duarte-conceicao/"
       iconName={faLinkedin}
     />
     <Icon
@@ -26,7 +26,7 @@ const SocialMedia: FC<Area> = ({ area }) => (
       iconName={faInstagram}
     />
     <Icon url="https://twitter.com/thelifeofmigueI" iconName={faTwitter} />
-    <Icon url="mailto: luisconceicao.contact@gmail.com" iconName={faGoogle} />
+    <Icon url="mailto: miguelduarte.contact@gmail.com" iconName={faGoogle} />
   </span>
 );
 

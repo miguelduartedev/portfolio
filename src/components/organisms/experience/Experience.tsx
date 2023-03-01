@@ -155,7 +155,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
         <div className="row pt-5">
           <div className="col-12 col-md-2 pb-4 pb-md-0">
             <a
-              href="https://luisconceicaodev.github.io/portfolio/"
+              href="https://miguelduartedev.github.io/portfolio/"
               target="_blank"
               rel="noreferrer"
             >
