@@ -2,7 +2,7 @@
 
 ## URL
 
-[Web Portfolio](https://luisconceicaodev.github.io/portfolio/)
+[Web Portfolio](https://miguelduartedev.github.io/portfolio/)
 
 ## Scripts
 
