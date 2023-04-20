@@ -1,8 +1,8 @@
-import { Area } from "@components/common/types";
-import clsx from "clsx";
-import { FC } from "react";
-import Skill from "../../atoms/skill";
-import "./Experience.scss";
+import { Area } from "@components/common/types"
+import clsx from "clsx"
+import { FC } from "react"
+import Skill from "../../atoms/skill"
+import "./Experience.scss"
 
 const Experience: FC<Area> = ({ area, setArea }) => (
   <section
@@ -42,7 +42,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
       </div>
       <div className="col-12 col-md-9 col-xl-10 text-start">
         <p className="fw-bold mb-0">Front End Developer @ Web Team </p>
-        <p className="detail mb-0">2019 - Present</p>
+        <p className="detail mb-0">Oct 2019 - Mar 2023</p>
         <p className="mb-0">
           Worked closely with the design and back-end teams to develop and
           maintain UI components for our website's design system. Brought in new
@@ -68,7 +68,7 @@ const Experience: FC<Area> = ({ area, setArea }) => (
       </div>
       <div className="col-12 col-md-9 col-xl-10 text-start">
         <p className="fw-bold mb-0">Bachelor's in Information Technology </p>
-        <p className="detail mb-0">2015 - 2019 // EECC Grade: B</p>
+        <p className="detail mb-0">Sep 2015 - Jun 2019 // EECC Grade: B</p>
         <p className="mb-0">
           University degree that follows the recommendations of the Association
           for Computing Machinery (ACM).
@@ -212,6 +212,6 @@ const Experience: FC<Area> = ({ area, setArea }) => (
       </div>
     </div>
   </section>
-);
+)
 
-export default Experience;
+export default Experience
