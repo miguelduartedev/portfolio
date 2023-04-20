@@ -1,16 +1,16 @@
-import { Area } from "@components/common/types";
+import { Area } from "@components/common/types"
 import {
   faGithub,
   faGoogle,
   faInstagram,
   faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import Icon from "../../atoms/icon";
+} from "@fortawesome/free-brands-svg-icons"
+import Icon from "../../atoms/icon"
 
-import clsx from "clsx";
-import { FC } from "react";
-import "./SocialMedia.scss";
+import { faFileAlt } from "@fortawesome/free-regular-svg-icons"
+import clsx from "clsx"
+import { FC } from "react"
+import "./SocialMedia.scss"
 
 const SocialMedia: FC<Area> = ({ area }) => (
   <span
@@ -25,9 +25,9 @@ const SocialMedia: FC<Area> = ({ area }) => (
       url="https://www.instagram.com/thelifeofmiguel/"
       iconName={faInstagram}
     />
-    <Icon url="https://twitter.com/thelifeofmigueI" iconName={faTwitter} />
+    <Icon url="https://flowcv.com/resume/ufj2gfikvl" iconName={faFileAlt} />
     <Icon url="mailto: miguelduarte.contact@gmail.com" iconName={faGoogle} />
   </span>
-);
+)
 
-export default SocialMedia;
+export default SocialMedia

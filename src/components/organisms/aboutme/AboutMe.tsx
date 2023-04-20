@@ -1,7 +1,7 @@
-import { Area } from "@components/common/types";
-import clsx from "clsx";
-import { FC } from "react";
-import "./AboutMe.scss";
+import { Area } from "@components/common/types"
+import clsx from "clsx"
+import { FC } from "react"
+import "./AboutMe.scss"
 
 const AboutMe: FC<Area> = ({ area, setArea }) => (
   <section
@@ -20,24 +20,24 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
         ← Back
       </p>
       <h3 className="text-area-heading text-start mt-1 mb-4">ABOUT ME</h3>
-      <p>Hello! As you may already know, my name is Miguel 👨🏻‍💻</p>
+      <p>Hello! </p>
       <p>
-        I'm a front-end developer born and raised in Lisbon. I graduated with an
-        I.T. bachelor's degree from the University of Lisbon in 2019 and as of
-        late October, 2022 I have 3 years of working experience at Talkdesk.
+        As you may already know, my name is Miguel and I'm a Front End
+        Developer. 👨🏻‍💻
+      </p>
+      <p>
+        I was born and raised in Lisbon, Portugal. I enjoy travel, nature,
+        politics, economics, video games and meeting people from all over the
+        world.
+      </p>
+      <p>
+        I graduated with a bachelor's degree in Information Technology from the
+        University of Lisbon in 2019. Shortly after that, I started working at
+        Talkdesk, where I have gathered over 3 years of working experience in
+        Front End Development using the latest and most in demand tools.
       </p>
       <p>
         On the sides I've also worked on two projects:{" "}
-        <a
-          style={{ color: "white" }}
-          href="https://ricardo-sousa.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="text-area-anchor"
-        >
-          Ricardo Sousa
-        </a>{" "}
-        and{" "}
         <a
           style={{ color: "white" }}
           href="https://interactive-maps.vercel.app/"
@@ -46,44 +46,58 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
           className="text-area-anchor"
         >
           Interactive Maps
-        </a>
-      </p>
-      <p>
-        You'll find more details on my professional career on the Professional
-        Experience area.
-      </p>
-      <p>
-        {" "}
-        Besides software development, I enjoy Travel, Geopolitics and{" "}
+        </a>{" "}
+        and{" "}
         <a
           style={{ color: "white" }}
-          href="https://en.wikipedia.org/wiki/Germanic-speaking_world"
+          href="https://ricardo-sousa.com/"
           target="_blank"
           rel="noreferrer"
           className="text-area-anchor"
         >
-          Germanic countries
+          Ricardo Sousa
         </a>
-        .{" "}
       </p>
       <p>
-        Slightly cliché but I would consider myself a global citizen. I have
-        friends scattered throughout the world and that's something that has
-        deeply shaped my sense of self. I don't see myself being defined or
-        limited by the borders of the country that I happened to have been born
-        in.
+        You can access my resume{" "}
+        <a
+          style={{ color: "white" }}
+          href="https://flowcv.com/resume/ufj2gfikvl"
+          target="_blank"
+          rel="noreferrer"
+          className="text-area-anchor"
+        >
+          here
+        </a>
+        . Further details can be found on the Professional Experience area of
+        this website.
+      </p>
+      <p>
+        From a very young age, I was always interested in technology, and I was
+        my family's go-to guy to fix a tech problem. As soon as I got access to
+        the World Wide Web, I would play online games with friends and learn
+        about different countries, with the Nordics in particular always peaking
+        my interest due to how different the landscape and climate were from my
+        home country.
+      </p>
+      <p>
+        I have friends scattered throughout the world, and that's something that
+        has shaped me. I don't see myself being defined or limited by the
+        borders of the country that I happened to have been born in. 🌎
       </p>
       <h3 className="text-area-heading text-start mt-5 mb-4">
         TRAVEL & INTERESTS
       </h3>
       <p>
-        I've so far traveled to the U.S., Canada, Norway, Sweden, Denmark, The
-        Netherlands, Belgium, Luxembourg, Ireland, Austria, France, Italy, The
-        Vatican and Spain.
+        As of May 2023 I've traveled to 24 countries in total. From North
+        America (U.S. and Canada) to Western, Eastern, Northern and Southern
+        Europe. Besides living in my home country of Portugal, I can say that
+        I've also lived for a couple of months in the Netherlands and in
+        Romania.
       </p>
       <p>
-        At the top of my bucket list you'll find Australia, New Zealand, Japan,
-        South Korea, Iceland, Chile/Argentina (Patagonia specifically).
+        At the top of my travel bucket list you'll find Australia, New Zealand,
+        Japan, South Korea, Iceland, Chile/Argentina (Patagonia specifically).
       </p>
       <p>
         I love colder climates which may sound weird to some people. I'm
@@ -94,14 +108,14 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
       <p>
         {" "}
         I enjoy capturing my travel experiences but I'm by no means a
-        photography expert! In this page you'll have a slider with some of the
-        favorite shots that I've taken 📷
+        photography expert! In this page you'll have a slider with some of my
+        personal favorite shots that I've taken in recent years. 📷
       </p>
       <p>
-        I've dabbled in music production, creating animations for storytelling
-        and pixel art (even won a Habbo Hotel competition once!) but none of
-        those stuck around. I also used to produce Gifs and Photosets on Tumblr
-        back in the day.
+        In my teen years I experimented with music production, creating
+        animations for storytelling and pixel art (even won a Habbo Hotel
+        competition once!) but none of those stuck around. I also used to
+        produce Gifs and Photosets on Tumblr back in the day.
       </p>
       <h3 className="text-area-heading text-start mt-5 mb-4">LANGUAGES</h3>
       <p>
@@ -110,13 +124,13 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
         Spanish.
       </p>
       <p>
-        I'd like to learn another Germanic language someday. I already know a
-        bit of Norwegian but not enough to have a conversation.
+        I'd like to learn more languages and I will definitely be motivated to
+        learn the language of whichever country that I move to. 🤓
       </p>
       <p>
         Fun fact, I don't remember ever actively trying to learn English. I was
-        just always somehow able to speak it. How? My theory is that I learned
-        it by watching unsubtitled and undubbed Cartoon Network shows. So I just
+        just always somehow able to speak it. My theory is that I learned it by
+        watching unsubtitled and undubbed Cartoon Network shows. So I just
         started connecting the images and the words that were spoken to the
         point were at the age of 6/8 I'd sometimes forget how to say certain
         words in Portuguese but I'd remember the English equivalent of the word.
@@ -124,6 +138,6 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
       </p>
     </span>
   </section>
-);
+)
 
-export default AboutMe;
+export default AboutMe
