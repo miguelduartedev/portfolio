@@ -1,16 +1,3 @@
 .social-media {
-  a {
-    text-decoration: none;
-    color: white;
-
-    svg {
-      transition: filter 200ms ease-out;
-
-      &:hover {
-        filter: drop-shadow(0 0 8px rgba(249, 197, 67));
-      }
-    }
-  }
-
   animation: text 1s ease-out 1800ms both;
 }

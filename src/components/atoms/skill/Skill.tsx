@@ -6,7 +6,7 @@ import "./Skill.scss";
 interface SkillProps {
   alt?: string;
   skill?: string;
-  source: string;
+  source?: string;
   className?: string;
   overrideImgClass?: string;
 }
@@ -19,11 +19,12 @@ const Skill: FC<SkillProps> = ({
   overrideImgClass,
 }) => (
   <div className={clsx("skill-bloc pointer", className)}>
-    <img
+    {exists(source) && <img
       className={clsx(overrideImgClass ? overrideImgClass : "skill-logo")}
       src={source}
       alt={clsx(exists(alt) ? alt : skill)}
-    />
+    />}
+  
     {exists(skill) && <p className="mb-0">{skill}</p>}
   </div>
 );

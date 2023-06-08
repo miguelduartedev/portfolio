@@ -1,12 +1,43 @@
-@import "~bootstrap/scss/bootstrap-grid.scss";
+@import '~bootstrap/scss/bootstrap-grid.scss';
 
 .skill {
+  &-container {
+    background-color: #fd967d;
+    padding: 25px;
+    border-radius: 28px;
+    border: 4px ridge #dc6d51;
+    transition: box-shadow 400ms ease-out;
+
+    &.-small {
+      padding: 12.5px;
+    }
+
+    &.main-stack {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+      border-radius: 40px;
+      color: black;
+      flex-wrap: wrap;
+    }
+
+    .font-size-08 {
+      font-size: 0.8rem;
+    }
+
+    .max-width-90 {
+      max-width: 90%;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: #ffc2b0 5px 5px, #faa594 10px 10px, #f1937e 15px 15px,
+        #e88068 20px 20px, #dc6d51 25px 25px;
+    }
+  }
   &-bloc {
     flex-basis: 28%;
     flex-grow: 0;
-    min-width: 100px;
-    min-height: 98px;
-    padding: 12px 12px 15px 12px;
     background-color: #f8f8ff;
     border-radius: 8px;
     display: flex;
@@ -15,16 +46,24 @@
     align-items: center;
     transition: filter 400ms ease-out;
     font-size: 12px;
+
     @include media-breakpoint-down(lg) {
       max-height: 98px;
       width: 100%;
     }
-    &:hover {
-      filter: drop-shadow(0 0 8px rgb(249, 197, 67));
-      .skill-logo {
-        transform: scale(1.1);
+
+    &.bg-color-highlight {
+      border: 1px solid black;
+      transition: transform 400ms ease-out, font-weight 100ms ease-out;
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      &:hover {
+        transform: translateY(-2px);
+        font-weight: 600;
       }
     }
+
     &.-min-height-120 {
       min-height: 120px;
     }
