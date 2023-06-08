@@ -257,10 +257,6 @@ const Experience: FC<Area> = ({ area, setArea }) => {
                     emailing services, upload of user avatars, sorting, and
                     pagination of tasks through query parameters.
                   </p>
-                  <p className="font-size-08 mb-0">
-                    It was my first "freelance" experience. I've learned a lot
-                    since then! 😄
-                  </p>
                 </span>
               </div>
             </div>
