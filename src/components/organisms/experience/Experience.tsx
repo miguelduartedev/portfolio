@@ -253,7 +253,7 @@ const Experience: FC<Area> = ({ area, setArea }) => {
                   </p>
                   <p className="font-size-08 mb-0">
                     API routes that handle secure user authentication through
-                    bcrypt and JSON web tokens, task CRUD, database connection,
+                    bcrypt and JSON Web Tokens, task CRUD, database connection,
                     emailing services, upload of user avatars, sorting, and
                     pagination of tasks through query parameters.
                   </p>
