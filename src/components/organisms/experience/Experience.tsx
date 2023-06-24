@@ -182,8 +182,8 @@ const Experience: FC<Area> = ({ area, setArea }) => {
                   <p className="fw-bold mb-0">Interactive Maps</p>
                   <p className="detail mb-0">2022</p>
                   <p className="font-size-08 fw-bold mb-2">
-                    Developed with React + NextJS, Redux Toolkit, React Query,
-                    SCSS and Bootstrap.{' '}
+                    Developed with React + NextJS, Redux Toolkit, React Query, MUI,
+                    SCSS, and Bootstrap.
                   </p>
 
                   <p className="font-size-08 mb-0">
