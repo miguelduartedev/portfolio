@@ -74,7 +74,7 @@ const Experience: FC<Area> = ({ area, setArea }) => {
           <div className="row skill-container ms-4 ms-sm-0 me-4 me-sm-0 mt-5">
             <div className="col-12 col-md-3 col-xl-2 pb-4 pb-md-0 px-0">
               <Skill
-                className="-min-height-120"
+                className="-min-height-120 kicker"
                 overrideImgClass="max-width-90"
                 alt="kicker.cloud"
                 source="./kickercloud.png"
@@ -160,33 +160,39 @@ const Experience: FC<Area> = ({ area, setArea }) => {
           Education
         </h3>
 
-        <div className="row skill-container ms-4 ms-sm-0 me-4 me-sm-0">
-          <div className="col-12 col-md-3 col-xl-2 pb-4 pb-md-0 px-0">
+        <div className="skill-container row ms-4 ms-sm-0 me-4 me-sm-0">
+          <div className="col-12 col-md-2 d-grid pb-4 pb-md-0">
             <Skill
-              className="-min-height-120"
-              overrideImgClass="max-height-92 max-width-90"
+              className="-projects"
               alt="university of lisbon"
               source="./ulisboa.svg"
             />
           </div>
-          <div className="col-12 col-md-9 col-xl-10 text-start">
-            <p className="fw-bold mb-0">
-              Bachelor's in Information Technology{" "}
-            </p>
-            <p className="detail mb-0">Sep 2015 - Jun 2019 // EECC Grade: B</p>
-            <p className="font-size-08 mb-0">
-              University degree that follows the recommendations of the
-              Association for Computing Machinery (ACM).
-            </p>
-            <p className="font-size-08 mb-0">
-              Multiple topics were touched such as Development of Web
-              Applications and Services, Object-Oriented Programming, Functional
-              Programming, Analysis / Design / Construction of Software,
-              Databases, User Interfaces, Distributed Applications, Unit Testing
-              and Project Management among others.
-            </p>
+          <div className="col-12 col-md-10">
+            <span className="text-start">
+              <p className="fw-bold mb-0">
+                {" "}
+                Bachelor's in Information Technology
+              </p>
+              <p className="detail mb-0">
+                Sep 2015 - Jun 2019 // EECC Grade: B
+              </p>
+              <p className="font-size-08 fw-bold mb-2">
+                University degree that follows the recommendations of the
+                Association for Computing Machinery (ACM).
+              </p>
+
+              <p className="font-size-08 mb-0">
+                Multiple topics were touched such as Development of Web
+                Applications and Services, Object-Oriented Programming,
+                Functional Programming, Analysis / Design / Construction of
+                Software, Databases, User Interfaces, Distributed Applications,
+                Unit Testing and Project Management among others.
+              </p>
+            </span>
           </div>
         </div>
+
         <div className="col-12 pt-5">
           <h3 className="text-area-heading text-start mt-1 mb-4">Projects</h3>
           <a
