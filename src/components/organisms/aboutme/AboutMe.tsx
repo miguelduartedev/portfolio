@@ -1,21 +1,21 @@
-import { Area } from '@components/common/types';
-import clsx from 'clsx';
-import { FC } from 'react';
-import './AboutMe.scss';
+import { Area } from "@components/common/types"
+import clsx from "clsx"
+import { FC } from "react"
+import "./AboutMe.scss"
 
 const AboutMe: FC<Area> = ({ area, setArea }) => (
   <section
-    className={clsx(`text-area ${area}`, area !== 'aboutme' && 'd-none')}
+    className={clsx(`text-area ${area}`, area !== "aboutme" && "d-none")}
   >
     <span
       className={clsx(
-        'text-aboutme pb-3',
-        area === 'aboutme' && '-transitionIn',
+        "text-aboutme pb-3",
+        area === "aboutme" && "-transitionIn",
       )}
     >
       <p
         className="text-area-anchor pointer pt-3"
-        onClick={() => setArea('main')}
+        onClick={() => setArea("main")}
       >
         ← Back
       </p>
@@ -42,9 +42,9 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
         Development using the latest and most in demand tools.
       </p>
       <p>
-        You can access my resume{' '}
+        You can access my resume{" "}
         <a
-          style={{ color: 'white' }}
+          style={{ color: "white" }}
           href="https://flowcv.com/resume/ufj2gfikvl"
           target="_blank"
           rel="noreferrer"
@@ -56,12 +56,13 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
         this website.
       </p>
       <p>
-        Now going back to the fun stuff, as of May 2023 I've traveled to 24
-        countries in total. 🌎
-      </p>{' '}
+        Now going back to the fun stuff, as of Dec 2023 I've traveled to more
+        than 25 countries in total. 🌎
+      </p>{" "}
       <p>
         I've been all across Europe and to the U.S. and Cadada in North America.
-        I've also lived in 4 countries: Portugal, the Netherlands, Romania and now Finland.
+        I've also lived in 4 countries: Portugal, the Netherlands, Romania and
+        now Finland.
       </p>
       <p>
         I enjoy capturing my travel experiences but I'm by no means a
@@ -69,13 +70,13 @@ const AboutMe: FC<Area> = ({ area, setArea }) => (
         personal favorite shots that I've taken in recent years. 📷
       </p>
       <p>
-        In my teen years I experimented with FL studio,
-        animations, pixel art (even won a Habbo Hotel
-        competition once!), etc. I also used to
-        produce Gifs and Photosets on Tumblr back in the day. So as you can see, creating things on the internet has always been my passion! 😁
+        In my teen years I experimented with FL studio, animations, pixel art
+        (even won a Habbo Hotel competition once!), etc. I also used to produce
+        Gifs and Photosets on Tumblr back in the day. So as you can see,
+        creating things on the internet has always been my passion! 😁
       </p>
     </span>
   </section>
-);
+)
 
-export default AboutMe;
+export default AboutMe
