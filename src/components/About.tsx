@@ -98,14 +98,17 @@ export default function About() {
               <h4 className="mb-2 font-display text-[10px] font-bold uppercase tracking-widest text-on-surface">
                 Location
               </h4>
-              <p className="font-mono text-primary">Helsinki, FI</p>
+              <p className="font-mono text-primary">
+                Helsinki, FI (Open to Relocation)
+              </p>
             </div>
             <div>
               <h4 className="mb-2 font-display text-[10px] font-bold uppercase tracking-widest text-on-surface">
                 Education
               </h4>
               <p className="font-mono text-primary">
-                Information Technology, University of Lisbon
+                Bachelor’s degree in Information Technology, University of
+                Lisbon
               </p>
             </div>
           </div>

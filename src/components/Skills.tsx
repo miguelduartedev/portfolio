@@ -30,24 +30,24 @@ const skills = [
 
 const timeline = [
   {
-    date: "2023 — Present",
-    role: "Full Stack Developer",
+    date: "2023 — 2026",
+    role: "Frontend / Full Stack Developer",
     company: "Savantiq • Helsinki (Hybrid)",
-    desc: "Driving front-end development at an early-stage startup, building features such as data visualisation tools (graphs and dashboards), CRM functionality, and project management systems, while also contributing to UX/UI design and backend development. Additionally, developed a PWA application.",
+    desc: "Joined as the fourth employee and took ownership of frontend development for an early-stage B2B product built with React, TypeScript and Next.js, while working as a generalist across product and engineering. Acted as the primary UI/UX contributor before a dedicated designer was hired, shaping product designs alongside building complex workflows, reusable components and data-driven interfaces, while also contributing to backend development with Python and Django REST Framework, API integrations, automated testing and CI/CD.",
     color: "bg-primary shadow-primary/50",
   },
   {
     date: "2023",
     role: "Web Developer & Web Designer (Consultant, Zero-Hour-Contract)",
     company: "Digipool Group • Helsinki (Remote)",
-    desc: "Collaborated with a Digipool client to fulfill their requirements, encompassing both Web Development and Web Design (UX/UI). Comprehensively mastered the tools and technologies employed by the client.",
+    desc: "Developed and designed a telecommunications provider comparison tool for comparing plans and offerings across multiple Finnish telecom providers, working directly with the client to translate requirements into functional UI/UX and web development solutions throughout the project.",
     color: "bg-secondary shadow-secondary/50",
   },
   {
     date: "2019 — 2023",
-    role: "Web Developer",
+    role: "Frontend Web Developer II",
     company: "Talkdesk • Lisbon (Remote)",
-    desc: "Collaborated closely with design and back-end teams at Talkdesk, a global cloud contact center platform serving customers worldwide, to develop, optimize, and maintain user-centric web applications and design systems, with a strong focus on performance, SEO, clean code, and modern UI/UX practices.",
+    desc: "Built and maintained user-facing web applications and reusable components within Talkdesk’s Storybook design system, collaborating closely with design and backend teams. Led frontend improvements across resource filtering, UI/UX and SEO, with a focus on usability, maintainability and performance, while contributing to the adoption of technologies including Next.js and Redux Toolkit and promoting clean code, testing and scalable frontend practices.",
     color: "bg-outline-variant",
   },
 ]
