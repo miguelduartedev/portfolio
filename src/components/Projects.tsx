@@ -22,7 +22,7 @@ const projects = [
     ],
     desc: "An interactive European data explorer for comparing regions through Eurostat statistics, maps and key indicators.",
     image: "/portfolio/EuroData.png",
-    href: "https://github.com/miguelduartedev/EuroData",
+    href: "https://eurodata.vercel.app/",
     color: "hover:border-secondary/20 hover:text-secondary",
   },
   {
