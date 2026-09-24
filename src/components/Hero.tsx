@@ -59,7 +59,7 @@ export default function Hero() {
           className="relative z-10 hidden md:col-span-5 md:block"
         >
           <img
-            src={`/portfolio/illustration.svg`}
+            src={`/illustration.svg`}
             alt="Frontend development illustration"
             className="h-full w-full object-contain transition-all duration-500 scale-115 hover:scale-120"
           />

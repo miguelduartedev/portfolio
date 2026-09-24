@@ -40,7 +40,7 @@ export default function About() {
         >
           <div className="absolute -left-10 -top-10 h-40 w-40 border-l-2 border-t-2 border-primary/20" />
           <img
-            src={`/portfolio/me.webp`}
+            src={`/me.webp`}
             alt="Miguel Portfolio"
             className="relative z-10 aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl"
           />
