@@ -26,20 +26,20 @@ const projects = [
     color: "hover:border-secondary/20 hover:text-secondary",
   },
   {
+    title: "Interactive Maps",
+    tags: ["React", "TypeScript", "Next.JS", "Redux TK"],
+    desc: "Interactive Maps is a custom map making tool that I've worked on out of passion for Maps, Geography and Geopolitics.",
+    image: "/portfolio/interactivemaps.png",
+    href: "https://interactive-maps.vercel.app/",
+    color: "hover:border-primary/20 hover:text-primary",
+  },
+  {
     title: "LocalDrop (WIP)",
     tags: ["Go", "JavaScript"],
     desc: "A local file-sharing tool built with Go and vanilla JavaScript for fast, low-memory transfers.",
     image: "/portfolio/LocalDrop.png",
     href: "",
     color: "hover:border-secondary/20 hover:text-secondary",
-  },
-  {
-    title: "Interactive Maps",
-    tags: ["React", "Next.JS", "Redux TK"],
-    desc: "Interactive Maps is a custom map making tool that I've worked on out of passion for Maps, Geography and Geopolitics.",
-    image: "/portfolio/interactivemaps.png",
-    href: "https://interactive-maps.vercel.app/",
-    color: "hover:border-primary/20 hover:text-primary",
   },
   {
     title: "API Request Batcher",
