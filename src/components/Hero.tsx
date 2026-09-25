@@ -1,6 +1,9 @@
 import { motion } from "motion/react"
+import { useTranslation } from "react-i18next"
 
 export default function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section
       id="welcome"
@@ -20,20 +23,19 @@ export default function Hero() {
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-outline-variant/30 bg-surface-container-highest px-3 py-1">
             <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
             <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-primary">
-              Front-end / Full-stack Developer
+              {t("hero.eyebrow")}
             </span>
           </div>
 
           <h1 className="mb-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
-            Crafting digital <br />
-            <span className="gradient-text">experiences</span> with <br />
-            technical precision.
+            {t("hero.titleLine1")} <br />
+            <span className="gradient-text">{t("hero.titleAccent")}</span>{" "}
+            {t("hero.titleConnector")} <br />
+            {t("hero.titleLine3")}
           </h1>
 
           <p className="mb-10 max-w-xl text-lg leading-relaxed text-on-surface-variant md:text-xl">
-            Hi! I am Miguel, a developer building high-performance, accessible,
-            and visually stunning web applications across the European tech
-            landscape.
+            {t("hero.intro")}
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -41,13 +43,13 @@ export default function Hero() {
               href="#about"
               className="rounded-xl bg-primary px-8 py-4 font-display text-lg font-semibold text-on-primary shadow-lg transition-all hover:shadow-primary/30 active:scale-95 cursor-pointer"
             >
-              Read Bio
+              {t("hero.readBio")}
             </a>
             <a
               href="#skills"
               className="rounded-xl border border-outline-variant px-8 py-4 font-display text-lg font-semibold text-on-surface transition-all hover:bg-white/5 active:scale-95 cursor-pointer"
             >
-              Experience & Skills
+              {t("hero.skillsCta")}
             </a>
           </div>
         </motion.div>
@@ -60,7 +62,7 @@ export default function Hero() {
         >
           <img
             src={`/illustration.svg`}
-            alt="Frontend development illustration"
+            alt={t("hero.illustrationAlt")}
             className="h-full w-full object-contain transition-all duration-500 scale-115 hover:scale-120"
           />
         </motion.div>

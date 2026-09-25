@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import { useTranslation } from "react-i18next"
 
 const EXPERIENCE_START_DATE = new Date(2019, 9, 21)
 
@@ -25,6 +26,7 @@ function formatExperienceYears(years: number): string {
 }
 
 export default function About() {
+  const { t } = useTranslation()
   const experienceYearsLabel = formatExperienceYears(
     getCompletedYearsSince(EXPERIENCE_START_DATE),
   )
@@ -41,7 +43,7 @@ export default function About() {
           <div className="absolute -left-10 -top-10 h-40 w-40 border-l-2 border-t-2 border-primary/20" />
           <img
             src={`/me.webp`}
-            alt="Miguel Portfolio"
+            alt={t("about.imageAlt")}
             className="relative z-10 aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl"
           />
           <motion.div
@@ -53,7 +55,7 @@ export default function About() {
               {experienceYearsLabel}
             </p>
             <p className="font-display text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
-              Years of Experience
+              {t("about.yearsExperience")}
             </p>
           </motion.div>
         </motion.div>
@@ -64,52 +66,30 @@ export default function About() {
           viewport={{ once: true }}
         >
           <h2 className="mb-4 font-display text-xs font-bold uppercase tracking-[0.2em] text-primary">
-            The Narrative
+            {t("about.eyebrow")}
           </h2>
           <h3 className="mb-8 font-display text-3xl font-bold leading-tight md:text-4xl">
-            From the South to the Nordics
+            {t("about.title")}
           </h3>
 
           <div className="space-y-6 text-lg leading-relaxed text-on-surface-variant">
-            <p>
-              Born and raised in Lisbon, Portugal, I was the geeky kid who was
-              good with technology. Fixing relatives' or friends' computers,
-              making GIFs and templates for Tumblr, and creating pixel art for
-              Habbo Hotel competitions.{" "}
-            </p>
-            <p>
-              I was also very curious (still am!), and once I got access to the
-              internet, I spent a lot of time learning about different
-              countries. The Nordics, in particular, always fascinated me. From
-              discovering photos of Lofoten as a 10 year old to standing there
-              in person years later, I always knew I wanted to move north. 😄
-            </p>
-            <p>
-              Outside of work, my interests include traveling (around 30
-              countries so far), hiking, photography (though I’m by no means an
-              expert), photo and video editing, geography and maps, going to the
-              cinema, watching TV shows and anime, playing video games, and
-              reading about politics and economics.
-            </p>
+            <p>{t("about.paragraph1")}</p>
+            <p>{t("about.paragraph2")}</p>
+            <p>{t("about.paragraph3")}</p>
           </div>
 
           <div className="mt-12 grid grid-cols-2 gap-8 border-t border-outline-variant/30 pt-8">
             <div>
               <h4 className="mb-2 font-display text-[10px] font-bold uppercase tracking-widest text-on-surface">
-                Location
+                {t("about.locationLabel")}
               </h4>
-              <p className="font-mono text-primary">
-                Helsinki, FI (Open to Relocation)
-              </p>
+              <p className="font-mono text-primary">{t("about.locationValue")}</p>
             </div>
             <div>
               <h4 className="mb-2 font-display text-[10px] font-bold uppercase tracking-widest text-on-surface">
-                Education
+                {t("about.educationLabel")}
               </h4>
-              <p className="font-mono text-primary">
-                Bachelor’s degree in Information Technology, University of
-                Lisbon
-              </p>
+              <p className="font-mono text-primary">{t("about.educationValue")}</p>
             </div>
           </div>
         </motion.div>

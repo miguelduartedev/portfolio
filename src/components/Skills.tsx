@@ -1,67 +1,70 @@
 import { motion } from "motion/react"
 import { Layers, Terminal, Brush, Zap } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 const skills = [
   {
     name: "React",
     icon: Layers,
     color: "text-primary",
-    desc: "Expertise in Hooks, Context, etc.",
+    descKey: "skills.cards.react",
   },
   {
     name: "TypeScript",
     icon: Terminal,
     color: "text-secondary",
-    desc: "Strict typing for bulletproof codebases.",
+    descKey: "skills.cards.typescript",
   },
   {
     name: "MUI, Tailwind, etc.",
     icon: Brush,
     color: "text-primary",
-    desc: "Modern frontend styling and UI systems.",
+    descKey: "skills.cards.styling",
   },
   {
     name: "Next.js",
     icon: Zap,
     color: "text-secondary",
-    desc: "Optimized SSR & Static Generation.",
+    descKey: "skills.cards.nextjs",
   },
 ]
 
 const timeline = [
   {
     date: "2023 — 2026",
-    role: "Frontend / Full Stack Developer",
-    company: "Savantiq • Helsinki (Hybrid)",
-    desc: "Joined as the fourth employee and took ownership of frontend development for an early-stage B2B product built with React, TypeScript and Next.js, while working as a generalist across product and engineering. Acted as the primary UI/UX contributor before a dedicated designer was hired, shaping product designs alongside building complex workflows, reusable components and data-driven interfaces, while also contributing to backend development with Python and Django REST Framework, API integrations, automated testing and CI/CD.",
+    roleKey: "skills.timeline.savantiq.role",
+    companyKey: "skills.timeline.savantiq.company",
+    descKey: "skills.timeline.savantiq.description",
     color: "bg-primary shadow-primary/50",
   },
   {
     date: "2023",
-    role: "Web Developer & Web Designer (Consultant, Zero-Hour-Contract)",
-    company: "Digipool Group • Helsinki (Remote)",
-    desc: "Developed and designed a telecommunications provider comparison tool for comparing plans and offerings across multiple Finnish telecom providers, working directly with the client to translate requirements into functional UI/UX and web development solutions throughout the project.",
+    roleKey: "skills.timeline.digipool.role",
+    companyKey: "skills.timeline.digipool.company",
+    descKey: "skills.timeline.digipool.description",
     color: "bg-secondary shadow-secondary/50",
   },
   {
     date: "2019 — 2023",
-    role: "Frontend Web Developer II",
-    company: "Talkdesk • Lisbon (Remote)",
-    desc: "Built and maintained user-facing web applications and reusable components within Talkdesk’s Storybook design system, collaborating closely with design and backend teams. Led frontend improvements across resource filtering, UI/UX and SEO, with a focus on usability, maintainability and performance, while contributing to the adoption of technologies including Next.js and Redux Toolkit and promoting clean code, testing and scalable frontend practices.",
+    roleKey: "skills.timeline.talkdesk.role",
+    companyKey: "skills.timeline.talkdesk.company",
+    descKey: "skills.timeline.talkdesk.description",
     color: "bg-outline-variant",
   },
 ]
 
 export default function Skills() {
+  const { t } = useTranslation()
+
   return (
     <section id="skills" className="py-24 md:py-40">
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="mb-20 text-center">
           <h2 className="mb-4 font-display text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-            Stack & Story
+            {t("skills.eyebrow")}
           </h2>
           <h3 className="font-display text-3xl font-bold md:text-4xl">
-            Technical Foundations
+            {t("skills.title")}
           </h3>
         </div>
 
@@ -83,7 +86,7 @@ export default function Skills() {
                 {skill.name}
               </h4>
               <p className="font-mono text-xs text-on-surface-variant">
-                {skill.desc}
+                {t(skill.descKey)}
               </p>
             </motion.div>
           ))}
@@ -113,12 +116,12 @@ export default function Skills() {
               </div>
               <div className="flex-1 border-b border-outline-variant/10 pb-12 last:border-0 last:pb-0">
                 <h4 className="mb-1 font-display text-xl font-bold">
-                  {item.role}
+                  {t(item.roleKey)}
                 </h4>
                 <p className="mb-4 font-mono text-sm text-on-surface-variant">
-                  {item.company}
+                  {t(item.companyKey)}
                 </p>
-                <p className="text-on-surface-variant">{item.desc}</p>
+                <p className="text-on-surface-variant">{t(item.descKey)}</p>
               </div>
             </motion.div>
           ))}

@@ -1,11 +1,12 @@
 import useEmblaCarousel from "embla-carousel-react"
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 const projects = [
   {
     title: "Interactive Maps",
     tags: ["React", "TypeScript", "Next.JS", "Redux TK"],
-    desc: "Interactive Maps is a custom map making tool that I've worked on out of passion for Maps, Geography and Geopolitics.",
+    descKey: "projects.items.interactiveMaps",
     image: "/interactivemaps.png",
     href: "https://interactive-maps.vercel.app/",
     color: "hover:border-primary/20 hover:text-primary",
@@ -20,7 +21,7 @@ const projects = [
       "Tailwind CSS",
       "Vitest",
     ],
-    desc: "An interactive European data explorer for comparing regions through Eurostat statistics, maps and key indicators.",
+    descKey: "projects.items.euroData",
     image: "/EuroData.png",
     href: "https://eurodata.vercel.app/",
     color: "hover:border-secondary/20 hover:text-secondary",
@@ -28,7 +29,7 @@ const projects = [
   {
     title: "SwimCity",
     tags: ["React Native", "TypeScript", "Jest"],
-    desc: "A mobile app for finding Helsinki swimming spots with live water data, interactive maps, favourites and beach details.",
+    descKey: "projects.items.swimCity",
     image: "/SwimCity.png",
     href: "https://github.com/miguelduartedev/SwimCity",
     color: "hover:border-secondary/20 hover:text-secondary",
@@ -36,7 +37,7 @@ const projects = [
   {
     title: "LocalDrop (WIP)",
     tags: ["Go", "JavaScript"],
-    desc: "A local file-sharing tool built with Go and vanilla JavaScript for fast, low-memory transfers.",
+    descKey: "projects.items.localDrop",
     image: "/LocalDrop.png",
     href: "",
     color: "hover:border-secondary/20 hover:text-secondary",
@@ -44,7 +45,7 @@ const projects = [
   {
     title: "API Request Batcher",
     tags: ["TypeScript", "Axios", "Jest"],
-    desc: "Batched GET requests with custom interceptors to reduce network calls and improve load performance.",
+    descKey: "projects.items.apiBatcher",
     image: "/placeholder.jpg",
     href: "https://github.com/miguelduartedev/api-request-batching",
     color: "hover:border-primary/20 hover:text-primary",
@@ -53,7 +54,8 @@ const projects = [
 
 type Project = (typeof projects)[number]
 
-function ProjectCard({ project, index }: { project: Project; index: number }) {
+function ProjectCard({ project }: { project: Project }) {
+  const { t } = useTranslation()
   const cardClassName = `group relative block h-full overflow-hidden rounded-[32px] border border-white/5 bg-surface-container-highest transition-all duration-500 hover:-translate-y-2 ${project.color}`
   const hasHref = project.href.trim().length > 0
 
@@ -81,11 +83,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {project.title}
         </h4>
         <p className="mb-6 line-clamp-2 text-on-surface-variant">
-          {project.desc}
+          {t(project.descKey)}
         </p>
         {hasHref && (
           <div className="inline-flex items-center gap-2 font-mono text-sm transition-all group-hover:opacity-80">
-            EXPLORE PROJECT{" "}
+            {t("projects.explore")} {" "}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </div>
         )}
@@ -110,6 +112,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 }
 
 export default function Projects() {
+  const { t } = useTranslation()
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     loop: true,
@@ -128,16 +131,16 @@ export default function Projects() {
         <div className="mb-16 flex flex-col items-end justify-between gap-6 md:flex-row">
           <div className="w-full">
             <h2 className="mb-4 font-display text-xs font-bold uppercase tracking-[0.2em] text-primary">
-              Selected Work
+              {t("projects.eyebrow")}
             </h2>
             <h3 className="max-w-md font-display text-3xl font-bold md:text-4xl">
-              Personal projects
+              {t("projects.title")}
             </h3>
           </div>
           <div className="flex gap-4">
             <button
               type="button"
-              aria-label="Show previous projects"
+              aria-label={t("projects.previous")}
               onClick={scrollPrev}
               className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-outline-variant text-on-surface-variant transition-all hover:border-primary hover:text-primary"
             >
@@ -145,7 +148,7 @@ export default function Projects() {
             </button>
             <button
               type="button"
-              aria-label="Show next projects"
+              aria-label={t("projects.next")}
               onClick={scrollNext}
               className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-outline-variant text-on-surface-variant transition-all hover:border-primary hover:text-primary"
             >
@@ -156,12 +159,12 @@ export default function Projects() {
 
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="-mx-4 flex touch-pan-y">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <div
                 key={project.title}
                 className="min-w-0 flex-[0_0_100%] px-4 md:flex-[0_0_50%]"
               >
-                <ProjectCard project={project} index={index} />
+                <ProjectCard project={project} />
               </div>
             ))}
           </div>
