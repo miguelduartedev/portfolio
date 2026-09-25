@@ -3,15 +3,15 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
-    title: "SwimCity",
-    tags: ["React Native", "TypeScript", "Jest"],
-    desc: "A mobile app for finding Helsinki swimming spots with live water data, interactive maps, favourites and beach details.",
-    image: "/SwimCity.png",
-    href: "https://github.com/miguelduartedev/SwimCity",
-    color: "hover:border-secondary/20 hover:text-secondary",
+    title: "Interactive Maps",
+    tags: ["React", "TypeScript", "Next.JS", "Redux TK"],
+    desc: "Interactive Maps is a custom map making tool that I've worked on out of passion for Maps, Geography and Geopolitics.",
+    image: "/interactivemaps.png",
+    href: "https://interactive-maps.vercel.app/",
+    color: "hover:border-primary/20 hover:text-primary",
   },
   {
-    title: "EuroData (WIP)",
+    title: "EuroData",
     tags: [
       "React",
       "TypeScript",
@@ -26,12 +26,12 @@ const projects = [
     color: "hover:border-secondary/20 hover:text-secondary",
   },
   {
-    title: "Interactive Maps",
-    tags: ["React", "TypeScript", "Next.JS", "Redux TK"],
-    desc: "Interactive Maps is a custom map making tool that I've worked on out of passion for Maps, Geography and Geopolitics.",
-    image: "/interactivemaps.png",
-    href: "https://interactive-maps.vercel.app/",
-    color: "hover:border-primary/20 hover:text-primary",
+    title: "SwimCity",
+    tags: ["React Native", "TypeScript", "Jest"],
+    desc: "A mobile app for finding Helsinki swimming spots with live water data, interactive maps, favourites and beach details.",
+    image: "/SwimCity.png",
+    href: "https://github.com/miguelduartedev/SwimCity",
+    color: "hover:border-secondary/20 hover:text-secondary",
   },
   {
     title: "LocalDrop (WIP)",
