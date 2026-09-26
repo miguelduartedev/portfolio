@@ -20,7 +20,7 @@ const nb = {
     titleConnector: "med",
     titleLine3: "teknisk presisjon.",
     intro:
-      "Hei! Jeg heter Miguel og er utvikler. Jeg bygger raske, tilgjengelige og visuelt gjennomførte webapplikasjoner i det europeiske teknologimiljøet.",
+      "Hei! Jeg heter Miguel og er utvikler. Jeg bygger raske, tilgjengelige og visuelt tiltalende webapplikasjoner i den europeiske teknologibransjen.",
     readBio: "Les mer om meg",
     skillsCta: "Erfaring og kompetanse",
     illustrationAlt: "Illustrasjon av frontendutvikling",
@@ -31,7 +31,7 @@ const nb = {
     eyebrow: "Historien",
     title: "Fra Sør-Europa til Norden",
     paragraph1:
-      "Jeg er født og oppvokst i Lisboa, Portugal, og var den teknologinteresserte ungen som alltid hadde teken på datamaskiner. Jeg fikset datamaskiner for familie og venner, lagde GIF-er og maler til Tumblr og pikselgrafikk til konkurranser i Habbo Hotel.",
+      "Jeg er født og oppvokst i Lisboa, Portugal, og var den teknologiinteresserte ungen som alltid hadde god greie på datamaskiner. Jeg fikset datamaskiner for familie og venner, lagde GIF-er og temaer til Tumblr og pikselgrafikk til konkurranser i Habbo Hotel.",
     paragraph2:
       "Jeg har også alltid vært veldig nysgjerrig (og er det fortsatt!). Da jeg fikk tilgang til internett, brukte jeg mye tid på å lære om ulike land. Norden fascinerte meg spesielt. Fra jeg oppdaget bilder av Lofoten som tiåring til jeg sto der selv mange år senere, har jeg alltid visst at jeg ville flytte nordover. 😄",
     paragraph3:
@@ -88,7 +88,7 @@ const nb = {
       localDrop:
         "Et lokalt fildelingsverktøy bygget med Go og vanilla JavaScript for raske overføringer med lavt minneforbruk.",
       apiBatcher:
-        "Grupperer GET-forespørsler med tilpassede interceptorer for å redusere nettverkskall og forbedre lastetiden.",
+        "Grupperer GET-forespørsler med tilpassede interceptorer for å redusere nettverkskall og forbedre innlastingstiden.",
     },
   },
   contact: {
@@ -99,7 +99,7 @@ const nb = {
     resume: "CV",
   },
   footer: {
-    tagline: "MIGUEL.DEV — BYGGER FOR NETTET",
+    tagline: "MIGUEL.DEV — FORMER WEBEN",
     copyright: "© 2026 Miguel. Bygget med presisjon i Europa.",
     backToTop: "Til toppen",
   },
