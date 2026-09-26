@@ -29,7 +29,9 @@ export default function Hero() {
 
           <h1 className="mb-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
             {t("hero.titleLine1")} <br />
-            <span className="gradient-text">{t("hero.titleAccent")}</span>{" "}
+            <span className="gradient-text whitespace-pre-line">
+              {t("hero.titleAccent")}
+            </span>{" "}
             {t("hero.titleConnector")} <br />
             {t("hero.titleLine3")}
           </h1>

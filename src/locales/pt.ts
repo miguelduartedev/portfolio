@@ -16,7 +16,7 @@ const pt = {
   hero: {
     eyebrow: "Programador Frontend / Full Stack",
     titleLine1: "A criar",
-    titleAccent: "experiências digitais",
+    titleAccent: "experiências\ndigitais",
     titleConnector: "com",
     titleLine3: "precisão técnica.",
     intro:
