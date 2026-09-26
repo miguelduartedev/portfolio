@@ -20,10 +20,10 @@ const pt = {
     titleConnector: "com",
     titleLine3: "precisão técnica.",
     intro:
-      "Olá! Sou o Miguel, um programador que cria aplicações web rápidas, acessíveis e visualmente marcantes no panorama tecnológico europeu.",
+      "Olá! Sou o Miguel, programador e criador de aplicações web rápidas, acessíveis e visualmente apelativas no panorama tecnológico europeu.",
     readBio: "Conhecer o meu percurso",
     skillsCta: "Experiência e competências",
-    illustrationAlt: "Ilustração de desenvolvimento frontend",
+    illustrationAlt: "Ilustração sobre desenvolvimento frontend",
   },
   about: {
     imageAlt: "Retrato do Miguel",
@@ -31,60 +31,60 @@ const pt = {
     eyebrow: "O percurso",
     title: "Do sul aos países nórdicos",
     paragraph1:
-      "Nascido e criado em Lisbon, Portugal, eu era o miúdo geek que tinha jeito para tecnologia. Arranjava os computadores de familiares e amigos, fazia GIFs e temas para o Tumblr e criava pixel art para concursos do Habbo Hotel.",
+      "Nascido e criado em Lisboa, Portugal, eu era o miúdo geek que tinha jeito para tecnologia. Arranjava os computadores de familiares e amigos, fazia GIFs e temas para o Tumblr e criava pixel art para concursos do Habbo Hotel.",
     paragraph2:
-      "Também sempre fui muito curioso (e continuo a ser!). Assim que tive acesso à internet, passei muito tempo a aprender sobre diferentes países. Os países nórdicos, em particular, sempre me fascinaram. Desde descobrir fotografias de Lofoten aos 10 anos até lá estar pessoalmente muitos anos depois, sempre soube que queria mudar-me para norte. 😄",
+      "Também sempre fui muito curioso (e continuo a ser!). Assim que tive acesso à internet, passei muito tempo a conhecer outros países. Os países nórdicos, em particular, sempre me fascinaram. Desde as primeiras fotografias de Lofoten, que descobri aos 10 anos, até ao dia em que lá estive, muitos anos depois, sempre soube que queria mudar-me para norte. 😄",
     paragraph3:
-      "Fora do trabalho, interesso-me por viajar (cerca de 30 países até agora), caminhadas, fotografia (embora esteja longe de ser especialista), edição de fotografia e vídeo, geografia e mapas, cinema, séries e anime, videojogos, política e economia.",
+      "Fora do trabalho, gosto de viajar (cerca de 30 países até agora), fazer caminhadas, fotografar (embora esteja longe de ser especialista), editar fotografia e vídeo, explorar geografia e mapas, ir ao cinema, ver séries e anime, jogar videojogos e ler sobre política e economia.",
     locationLabel: "Localização",
-    locationValue: "Helsinki, FI (Disponível para relocalização)",
+    locationValue: "Helsínquia, Finlândia (disponível para relocalização)",
     educationLabel: "Formação",
     educationValue:
-      "Licenciatura em Tecnologias de Informação, University of Lisbon",
+      "Licenciatura em Tecnologias da Informação, University of Lisbon",
   },
   skills: {
     eyebrow: "Tecnologias e percurso",
     title: "Bases técnicas",
     cards: {
-      react: "Experiência com Hooks, Context e muito mais.",
+      react: "Experiência sólida com Hooks, Context e muito mais.",
       typescript: "Tipagem rigorosa para bases de código robustas.",
-      styling: "Estilização frontend moderna e sistemas de UI.",
+      styling: "Estilos modernos para frontend e sistemas de UI.",
       nextjs: "SSR e geração estática otimizados.",
     },
     timeline: {
       savantiq: {
         role: "Programador Frontend / Full Stack",
-        company: "Savantiq • Helsinki (Híbrido)",
+        company: "Savantiq • Helsínquia (Híbrido)",
         description:
-          "Entrei como o quarto colaborador e assumi a responsabilidade pelo desenvolvimento frontend de um produto B2B em fase inicial, criado com React, TypeScript e Next.js, trabalhando de forma generalista entre produto e engenharia. Fui o principal responsável por UI/UX antes da contratação de um designer dedicado, contribuindo para o design do produto e desenvolvendo fluxos complexos, componentes reutilizáveis e interfaces orientadas por dados. Contribuí também para o backend com Python e Django REST Framework, integrações de API, testes automatizados e CI/CD.",
+          "Entrei como o quarto elemento da equipa e assumi o desenvolvimento frontend de um produto B2B em fase inicial, criado com React, TypeScript e Next.js, trabalhando de forma transversal entre produto e engenharia. Fui o principal responsável por UI/UX até à contratação de um designer dedicado, conciliando o design do produto com a criação de fluxos complexos, componentes reutilizáveis e interfaces orientadas por dados. Contribuí também para o desenvolvimento backend com Python e Django REST Framework, integrações de API, testes automatizados e CI/CD.",
       },
       digipool: {
         role: "Programador e Web Designer (Consultor, Contrato de Zero Horas)",
-        company: "Digipool Group • Helsinki (Remoto)",
+        company: "Digipool Group • Helsínquia (Remoto)",
         description:
-          "Desenvolvi e desenhei uma ferramenta de comparação de operadores de telecomunicações, destinada a comparar planos e ofertas de vários operadores finlandeses. Trabalhei diretamente com o cliente para transformar requisitos em soluções funcionais de UI/UX e desenvolvimento web ao longo de todo o projeto.",
+          "Desenvolvi e desenhei uma ferramenta que permitia comparar tarifários e ofertas de vários operadores de telecomunicações finlandeses. Trabalhei diretamente com o cliente ao longo de todo o projeto para transformar requisitos em soluções funcionais de UI/UX e desenvolvimento web.",
       },
       talkdesk: {
         role: "Programador Web Frontend II",
-        company: "Talkdesk • Lisbon (Remoto)",
+        company: "Talkdesk • Lisboa (Remoto)",
         description:
-          "Desenvolvi e mantive aplicações web e componentes reutilizáveis no design system Storybook da Talkdesk, em estreita colaboração com equipas de design e backend. Liderei melhorias de frontend em filtragem de recursos, UI/UX e SEO, com foco em usabilidade, manutenção e desempenho. Contribuí ainda para a adoção de tecnologias como Next.js e Redux Toolkit e promovi código limpo, testes e práticas de frontend escaláveis.",
+          "Desenvolvi e mantive aplicações web e componentes reutilizáveis no sistema de design em Storybook da Talkdesk, em estreita colaboração com as equipas de design e backend. Liderei melhorias de frontend na filtragem de recursos, em UI/UX e em SEO, com foco na usabilidade, manutenibilidade e desempenho. Contribuí ainda para a adoção de tecnologias como Next.js e Redux Toolkit e promovi código limpo, testes e práticas de frontend escaláveis.",
       },
     },
   },
   projects: {
-    eyebrow: "Trabalho selecionado",
+    eyebrow: "Projetos selecionados",
     title: "Projetos pessoais",
     explore: "Explorar projeto",
     previous: "Mostrar projetos anteriores",
     next: "Mostrar projetos seguintes",
     items: {
       interactiveMaps:
-        "Interactive Maps é uma ferramenta personalizada para criar mapas, desenvolvida a partir da minha paixão por mapas, geografia e geopolítica.",
+        "Interactive Maps é uma ferramenta à medida para criar mapas, desenvolvida a partir da minha paixão por cartografia, geografia e geopolítica.",
       euroData:
-        "Um explorador interativo de dados europeus para comparar regiões através de estatísticas do Eurostat, mapas e indicadores-chave.",
+        "Uma ferramenta interativa para explorar dados europeus e comparar regiões através de estatísticas do Eurostat, mapas e indicadores-chave.",
       swimCity:
-        "Uma aplicação móvel para encontrar locais de natação em Helsinki, com dados da água em tempo real, mapas interativos, favoritos e detalhes das praias.",
+        "Uma aplicação móvel para encontrar locais de natação em Helsínquia, com dados da água em tempo real, mapas interativos, favoritos e informações sobre as praias.",
       localDrop:
         "Uma ferramenta local de partilha de ficheiros, criada com Go e JavaScript puro para transferências rápidas e com baixo consumo de memória.",
       apiBatcher:
@@ -93,14 +93,14 @@ const pt = {
   },
   contact: {
     eyebrow: "Vamos conversar",
-    titleLine1: "À procura da sua",
-    titleAccent: "próxima contratação em engenharia?",
+    titleLine1: "À procura do próximo",
+    titleAccent: "talento para a sua equipa de engenharia?",
     getInTouch: "Entrar em contacto",
     resume: "Currículo",
   },
   footer: {
-    tagline: "MIGUEL.DEV — A ARQUITETAR A WEB",
-    copyright: "© 2026 Miguel. Criado com precisão na Europa.",
+    tagline: "MIGUEL.DEV — A CONSTRUIR A WEB",
+    copyright: "© 2026 Miguel. Criado com rigor na Europa.",
     backToTop: "Voltar ao início",
   },
 } as const satisfies TranslationResource

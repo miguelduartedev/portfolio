@@ -14,14 +14,14 @@ const fi = {
     selectorLabel: "Valitse kieli",
   },
   hero: {
-    eyebrow: "Frontend-/full stack -kehittäjä",
+    eyebrow: "Frontend- ja full stack -kehittäjä",
     titleLine1: "Rakennan digitaalisia",
     titleAccent: "kokemuksia",
     titleConnector: "teknisellä",
     titleLine3: "tarkkuudella.",
     intro:
-      "Hei! Olen Miguel, kehittäjä, joka rakentaa suorituskykyisiä, saavutettavia ja visuaalisesti näyttäviä verkkosovelluksia eurooppalaisessa teknologiakentässä.",
-    readBio: "Lue tarinani",
+      "Hei! Olen Miguel. Rakennan suorituskykyisiä, saavutettavia ja visuaalisesti vaikuttavia verkkosovelluksia eurooppalaisella teknologiakentällä.",
+    readBio: "Tutustu tarinaani",
     skillsCta: "Kokemus ja osaaminen",
     illustrationAlt: "Frontend-kehitystä kuvaava kuvitus",
   },
@@ -29,66 +29,66 @@ const fi = {
     imageAlt: "Miguelin muotokuva",
     yearsExperience: "Vuotta kokemusta",
     eyebrow: "Tarina",
-    title: "Etelästä Pohjoismaihin",
+    title: "Etelä-Euroopasta Pohjolaan",
     paragraph1:
-      "Synnyin ja kasvoin Lisbonissa, Portugalissa, ja olin se teknologiasta innostunut lapsi, joka osasi auttaa tietokoneiden kanssa. Korjasin sukulaisten ja ystävien tietokoneita, tein GIF-kuvia ja teemoja Tumblriin sekä pikselitaidetta Habbo Hotelin kilpailuihin.",
+      "Synnyin ja kasvoin Lissabonissa, Portugalissa, ja olin se teknologiasta innostunut lapsi, joka pärjäsi tietokoneiden kanssa. Korjasin sukulaisten ja kavereiden tietokoneita, tein GIF-animaatioita ja Tumblr-pohjia sekä pikselitaidetta Habbo Hotelin kilpailuihin.",
     paragraph2:
-      "Olen myös aina ollut hyvin utelias (ja olen edelleen!). Kun pääsin internetiin, käytin paljon aikaa eri maihin tutustumiseen. Erityisesti Pohjoismaat kiehtoivat minua. Löysin kuvia Lofotenista kymmenvuotiaana ja seisoin siellä itse vuosia myöhemmin — tiesin aina haluavani muuttaa pohjoiseen. 😄",
+      "Olen myös aina ollut hyvin utelias (ja olen edelleen!). Kun sain internetyhteyden, käytin paljon aikaa eri maihin tutustumiseen. Erityisesti Pohjoismaat kiehtoivat minua. Näin kuvia Lofooteista jo kymmenvuotiaana ja seisoin siellä itse vuosia myöhemmin — tiesin aina haluavani muuttaa pohjoiseen. 😄",
     paragraph3:
-      "Työn ulkopuolella kiinnostuksenkohteitani ovat matkustaminen (noin 30 maata tähän mennessä), vaellus, valokuvaus (vaikka en missään nimessä ole asiantuntija), kuvien ja videoiden editointi, maantiede ja kartat, elokuvissa käyminen, sarjat ja anime, videopelit sekä politiikan ja talouden seuraaminen.",
+      "Vapaa-ajallani matkustan (noin 30 maata tähän mennessä), vaellan, valokuvaan (vaikka en olekaan asiantuntija), editoin kuvia ja videoita, tutkin maantiedettä ja karttoja, käyn elokuvissa, katson sarjoja ja animea, pelaan videopelejä sekä seuraan politiikkaa ja taloutta.",
     locationLabel: "Sijainti",
-    locationValue: "Helsinki, FI (Valmis muuttamaan)",
+    locationValue: "Helsinki, Suomi (valmis muuttamaan)",
     educationLabel: "Koulutus",
     educationValue:
       "Tietotekniikan kandidaatin tutkinto, University of Lisbon",
   },
   skills: {
     eyebrow: "Teknologiat ja kokemus",
-    title: "Tekninen perusta",
+    title: "Tekninen osaaminen",
     cards: {
-      react: "Vahva osaaminen Hookseista, Contextista ja muusta.",
-      typescript: "Tiukka tyypitys kestävien koodipohjien tueksi.",
-      styling: "Moderni frontend-tyylittely ja UI-järjestelmät.",
+      react: "Vahva Hooks-, Context- ja muu React-osaaminen.",
+      typescript: "Tiukka tyypitys luotettavien koodipohjien perustana.",
+      styling: "Modernit frontend-tyylit ja UI-järjestelmät.",
       nextjs: "Optimoitu SSR ja staattinen generointi.",
     },
     timeline: {
       savantiq: {
-        role: "Frontend-/full stack -kehittäjä",
-        company: "Savantiq • Helsinki (Hybridi)",
+        role: "Frontend- ja full stack -kehittäjä",
+        company: "Savantiq • Helsinki (hybridi)",
         description:
-          "Liityin yrityksen neljänneksi työntekijäksi ja otin vastuulleni Reactilla, TypeScriptillä ja Next.js:llä rakennetun varhaisen vaiheen B2B-tuotteen frontend-kehityksen. Työskentelin laaja-alaisesti tuote- ja kehitystehtävissä sekä vastasin pääosin UI/UX-työstä ennen oman suunnittelijan palkkaamista. Muotoilin tuoteratkaisuja ja rakensin monimutkaisia työnkulkuja, uudelleenkäytettäviä komponentteja ja datalähtöisiä käyttöliittymiä. Osallistuin myös backend-kehitykseen Pythonilla ja Django REST Frameworkilla sekä API-integraatioihin, automaattiseen testaukseen ja CI/CD-työhön.",
+          "Liityin yrityksen neljänneksi työntekijäksi ja otin vastuun Reactilla, TypeScriptillä ja Next.js:llä rakennetun varhaisen vaiheen B2B-tuotteen frontend-kehityksestä. Työskentelin monipuolisesti tuote- ja ohjelmistokehityksen parissa ja vastasin pääosin UI/UX:stä ennen oman suunnittelijan palkkaamista. Suunnittelin tuotetta ja rakensin monimutkaisia työnkulkuja, uudelleenkäytettäviä komponentteja ja datalähtöisiä käyttöliittymiä. Osallistuin myös backend-kehitykseen Pythonilla ja Django REST Frameworkilla sekä API-integraatioihin, automaattiseen testaukseen ja CI/CD-työhön.",
       },
       digipool: {
-        role: "Web-kehittäjä ja web-suunnittelija (Konsultti, Nollatuntisopimus)",
-        company: "Digipool Group • Helsinki (Etätyö)",
+        role: "Web-kehittäjä ja -suunnittelija (konsultti, nollatuntisopimus)",
+        company: "Digipool Group • Helsinki (etätyö)",
         description:
-          "Kehitin ja suunnittelin teleoperaattoreiden vertailutyökalun, jolla voi vertailla useiden suomalaisten operaattoreiden liittymiä ja tarjouksia. Työskentelin koko projektin ajan suoraan asiakkaan kanssa ja muutin vaatimukset toimiviksi UI/UX- ja web-kehitysratkaisuiksi.",
+          "Kehitin ja suunnittelin teleoperaattoreiden vertailutyökalun, jonka avulla pystyi vertailemaan useiden suomalaisten operaattoreiden liittymiä ja tarjouksia. Työskentelin koko projektin ajan suoraan asiakkaan kanssa ja jalostin vaatimukset toimiviksi UI/UX- ja web-kehitysratkaisuiksi.",
       },
       talkdesk: {
-        role: "Frontend-web-kehittäjä II",
-        company: "Talkdesk • Lisbon (Etätyö)",
+        role: "Frontend-kehittäjä II",
+        company: "Talkdesk • Lissabon (etätyö)",
         description:
-          "Rakensin ja ylläpidin käyttäjille suunnattuja verkkosovelluksia ja uudelleenkäytettäviä komponentteja Talkdeskin Storybook-designjärjestelmässä tiiviissä yhteistyössä suunnittelu- ja backend-tiimien kanssa. Johdin frontend-parannuksia resurssien suodatuksessa, UI/UX:ssa ja SEO:ssa painottaen käytettävyyttä, ylläpidettävyyttä ja suorituskykyä. Edistin myös Next.js:n ja Redux Toolkitin kaltaisten teknologioiden käyttöönottoa sekä puhdasta koodia, testausta ja skaalautuvia frontend-käytäntöjä.",
+          "Rakensin ja ylläpidin käyttäjille suunnattuja verkkosovelluksia ja uudelleenkäytettäviä komponentteja Talkdeskin Storybook-pohjaisessa designjärjestelmässä tiiviissä yhteistyössä suunnittelu- ja backend-tiimien kanssa. Johdin frontend-parannuksia resurssien suodatuksessa, UI/UX:ssa ja SEO:ssa painottaen käytettävyyttä, ylläpidettävyyttä ja suorituskykyä. Edistin myös Next.js:n ja Redux Toolkitin kaltaisten teknologioiden käyttöönottoa sekä puhdasta koodia, testausta ja skaalautuvia frontend-käytäntöjä.",
       },
     },
   },
   projects: {
-    eyebrow: "Valikoidut työt",
+    eyebrow: "Valikoituja töitä",
     title: "Omat projektit",
     explore: "Tutustu projektiin",
     previous: "Näytä edelliset projektit",
     next: "Näytä seuraavat projektit",
     items: {
       interactiveMaps:
-        "Interactive Maps on räätälöity karttojen luontityökalu, jonka rakensin kiinnostuksesta karttoihin, maantieteeseen ja geopolitiikkaan.",
+        "Interactive Maps on räätälöity karttatyökalu, jonka rakensin kiinnostuksesta karttoihin, maantieteeseen ja geopolitiikkaan.",
       euroData:
-        "Interaktiivinen eurooppalainen datatyökalu alueiden vertailuun Eurostat-tilastojen, karttojen ja keskeisten indikaattorien avulla.",
+        "Interaktiivinen työkalu Euroopan alueiden vertailuun Eurostat-tilastojen, karttojen ja keskeisten indikaattorien avulla.",
       swimCity:
         "Mobiilisovellus Helsingin uimapaikkojen löytämiseen. Se tarjoaa ajantasaiset vesitiedot, interaktiiviset kartat, suosikit ja rantojen tiedot.",
       localDrop:
-        "Go:lla ja puhtaalla JavaScriptillä rakennettu paikallinen tiedostonjakotyökalu nopeisiin ja muistitehokkaisiin siirtoihin.",
+        "Go:lla ja vanilla JavaScriptillä rakennettu paikallinen tiedostonjakotyökalu nopeisiin ja muistitehokkaisiin siirtoihin.",
       apiBatcher:
-        "Ryhmitellyt GET-pyynnöt ja mukautetut interceptorit vähentävät verkkokutsuja ja parantavat latauskykyä.",
+        "Ryhmitellyt GET-pyynnöt ja mukautetut interceptorit vähentävät verkkokutsuja ja parantavat latausnopeutta.",
     },
   },
   contact: {
@@ -99,8 +99,8 @@ const fi = {
     resume: "Ansioluettelo",
   },
   footer: {
-    tagline: "MIGUEL.DEV — VERKON ARKKITEHTUURIA",
-    copyright: "© 2026 Miguel. Rakennettu tarkasti Euroopassa.",
+    tagline: "MIGUEL.DEV — VERKON RAKENTAJA",
+    copyright: "© 2026 Miguel. Rakennettu huolella Euroopassa.",
     backToTop: "Takaisin alkuun",
   },
 } as const satisfies TranslationResource
