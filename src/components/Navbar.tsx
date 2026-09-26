@@ -1,15 +1,18 @@
 import { motion } from "motion/react"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
+import LanguageSelector from "./LanguageSelector"
 
 const navLinks = [
-  { name: "Welcome", href: "#welcome" },
-  { name: "About Me", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
+  { labelKey: "nav.welcome", href: "#welcome" },
+  { labelKey: "nav.about", href: "#about" },
+  { labelKey: "nav.skills", href: "#skills" },
+  { labelKey: "nav.projects", href: "#projects" },
 ]
 
 export default function Navbar() {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -20,31 +23,37 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden space-x-8 md:flex">
+        <div className="hidden space-x-6 lg:flex xl:space-x-8">
           {navLinks.map((link) => (
             <a
-              key={link.name}
+              key={link.labelKey}
               href={link.href}
               className="font-mono text-sm font-medium text-on-surface-variant transition-colors hover:text-on-surface"
             >
-              {link.name}
+              {t(link.labelKey)}
             </a>
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 md:gap-4">
           <a
             href="mailto:miguelduarte.contact@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-primary px-6 py-2 font-display text-xs font-bold uppercase tracking-widest text-on-primary transition-all hover:bg-primary-container active:scale-95 md:block"
+            className="hidden rounded-full bg-primary px-6 py-2 font-display text-xs font-bold uppercase tracking-widest text-on-primary transition-all hover:bg-primary-container active:scale-95 lg:block"
           >
-            Get in Touch
+            {t("nav.getInTouch")}
           </a>
+
+          <LanguageSelector />
 
           {/* Mobile Toggle */}
           <button
-            className="text-on-surface md:hidden"
+            type="button"
+            aria-label={t(isOpen ? "nav.closeMenu" : "nav.openMenu")}
+            aria-controls="mobile-navigation"
+            aria-expanded={isOpen}
+            className="cursor-pointer text-on-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}
@@ -55,19 +64,20 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.div
+          id="mobile-navigation"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute left-0 top-full w-full border-b border-white/5 bg-surface p-6 md:hidden"
+          className="absolute left-0 top-full w-full border-b border-white/5 bg-surface p-6 lg:hidden"
         >
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a
-                key={link.name}
+                key={link.labelKey}
                 href={link.href}
-                className="font-mono text-lg text-on-surface-variant hover:text-on-surface"
+                className="rounded-lg font-mono text-lg text-on-surface-variant hover:text-on-surface focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
                 onClick={() => setIsOpen(false)}
               >
-                {link.name}
+                {t(link.labelKey)}
               </a>
             ))}
             <a
@@ -77,7 +87,7 @@ export default function Navbar() {
               className="rounded-xl bg-primary py-4 text-center font-display font-bold text-on-primary"
               onClick={() => setIsOpen(false)}
             >
-              Get in Touch
+              {t("nav.getInTouch")}
             </a>
           </div>
         </motion.div>

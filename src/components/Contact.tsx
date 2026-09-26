@@ -1,7 +1,10 @@
 import { motion } from "motion/react"
 import { Mail, Github, Linkedin, FileText } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 export default function Contact() {
+  const { t } = useTranslation()
+
   return (
     <section id="contact" className="py-24 md:py-40">
       <div className="mx-auto max-w-7xl px-6 md:px-12">
@@ -16,12 +19,12 @@ export default function Contact() {
           <div className="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-secondary/10 blur-[100px]" />
 
           <h2 className="mb-8 font-display text-xs font-bold uppercase tracking-[0.3em] text-on-surface-variant">
-            Let's Connect
+            {t("contact.eyebrow")}
           </h2>
 
           <h3 className="mb-12 font-display text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-            Looking for your <br />
-            <span className="gradient-text">next engineering hire?</span>
+            {t("contact.titleLine1")} <br />
+            <span className="gradient-text">{t("contact.titleAccent")}</span>
           </h3>
 
           <div className="mb-16 flex justify-center">
@@ -31,7 +34,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="flex items-center gap-3 rounded-2xl bg-primary px-12 py-5 font-display text-xl font-bold text-on-primary shadow-2xl transition-all hover:shadow-primary/40 active:scale-95 cursor-pointer"
             >
-              <Mail className="h-6 w-6" /> Get in Touch
+              <Mail className="h-6 w-6" /> {t("contact.getInTouch")}
             </a>
           </div>
 
@@ -51,7 +54,7 @@ export default function Contact() {
               },
               {
                 icon: FileText,
-                label: "RESUME",
+                label: t("contact.resume").toUpperCase(),
                 href: "https://flowcv.com/resume/ufj2gfikvl",
                 isExternal: true,
               },
