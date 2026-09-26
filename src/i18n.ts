@@ -2,10 +2,11 @@ import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 import en from "./locales/en"
 import fi from "./locales/fi"
+import nb from "./locales/nb"
 import pt from "./locales/pt"
 import sv from "./locales/sv"
 
-export const supportedLanguages = ["en", "pt", "sv", "fi"] as const
+export const supportedLanguages = ["en", "pt", "sv", "nb", "fi"] as const
 
 export type LanguageCode = (typeof supportedLanguages)[number]
 
@@ -49,6 +50,7 @@ void i18n.use(initReactI18next).init({
     en: { translation: en },
     pt: { translation: pt },
     sv: { translation: sv },
+    nb: { translation: nb },
     fi: { translation: fi },
   },
   lng: initialLanguage,

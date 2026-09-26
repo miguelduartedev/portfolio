@@ -11,6 +11,7 @@ const languages: ReadonlyArray<{
   { code: "en", flag: "🇬🇧", label: "English" },
   { code: "pt", flag: "🇵🇹", label: "Português" },
   { code: "sv", flag: "🇸🇪", label: "Svenska" },
+  { code: "nb", flag: "🇳🇴", label: "Norsk" },
   { code: "fi", flag: "🇫🇮", label: "Suomi" },
 ]
 
